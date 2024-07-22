@@ -19,6 +19,224 @@
     display: flex;
     align-items: center;
 }
-.widget-text {
-    margin-left: 10px;
+/* Space between logo and menu items */
+#logo-sticky {
+    margin-right: 20px; /* Adjust as needed */
+}
+
+/* Space between menu items */
+.nav-menu > li {
+    margin-right: 20px; /* Adjust as needed */
+}
+
+/* Space between menu items and last item */
+.nav-menu > li:last-child {
+    margin-right: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .rs-menu {
+        display: none;
+    }
+    .rs-menu-toggle {
+        display: block;
+    }
+}
+
+/* Ensure menu items have space on smaller screens */
+.rs-menu-toggle {
+    margin-left: 20px; /* Adjust as needed */
+}
+/* Style for the main sub-menu */
+.menu-item-has-children .sub-menu {
+    display: none; /* Hide sub-menus by default */
+    position: absolute; /* Position relative to the parent */
+    top: 100%; /* Position below the parent item */
+    left: 0;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    background: #292828; /* Adjust background color */
+    border: 1px solid #ddd; /* Border for the submenu */
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+/* Style for the nested sub-menu */
+.menu-item-has-children .sub-menu .sub-menu {
+    top: 0; /* Align to the right of the parent */
+    left: 100%; /* Move to the right of the parent */
+    margin-left: 1px; /* Small space to prevent overlap */
+}
+
+/* Show the sub-menu on hover */
+.menu-item-has-children:hover > .sub-menu {
+    display: block;
+}
+
+/* Style for submenu items */
+.sub-menu li {
+    position: relative;
+}
+
+.sub-menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333; /* Adjust text color */
+}
+
+/* Hover effect for submenu items */
+.sub-menu a:hover {
+    background: #f0f0f0; /* Adjust hover background color */
+}
+
+
+/* About section css */
+.container1 {
+    padding: 20px;
+    background-color: #f9f9f9; /* Background color for the container */
+    border-radius: 10px; /* Rounded corners for the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for the container */
+    margin-top: 20px; /* Top margin to separate from other content */
+}
+
+.content {
+    padding: 20px;
+    background-color: #fff; /* Background color for the content */
+    border-radius: 10px; /* Rounded corners for the content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for the content */
+    margin-bottom: 20px; /* Bottom margin for spacing */
+}
+
+.content h1, .content h2 {
+    color: #333; /* Text color for headings */
+    margin-bottom: 10px; /* Margin bottom for spacing */
+}
+
+.content p {
+    color: #666; /* Text color for paragraphs */
+    margin-bottom: 10px; /* Margin bottom for spacing */
+    line-height: 1.6; /* Line height for readability */
+}
+
+.content ul {
+    margin-top: 10px;
+    padding-left: 20px; /* Padding left for list indentation */
+}
+
+.content ul li {
+    color: #666; /* Text color for list items */
+    margin-bottom: 10px; /* Margin bottom for spacing */
+    line-height: 1.6; /* Line height for readability */
+}
+
+.content a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px; /* Padding for the button */
+    background-color: #007bff; /* Background color for the button */
+    color: #fff; /* Text color for the button */
+    border-radius: 5px; /* Rounded corners for the button */
+    text-decoration: none; /* Remove underline from the link */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.content a:hover {
+    background-color: #0056b3; /* Background color on hover */
+}
+
+.image1 img {
+    width: 100%; /* Full width for the image */
+    border-radius: 10px; /* Rounded corners for the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for the image */
+    object-fit: cover; /* Cover the container without stretching */
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    .container1 {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .content {
+        margin-bottom: 10px; /* Adjust margin for smaller screens */
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+
+    .content h1, .content h2 {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+
+    .content p, .content ul li {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+
+    .content a {
+        padding: 8px 16px; /* Adjust padding for smaller screens */
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+
+    .image1 img {
+        margin-bottom: 10px; /* Add bottom margin for smaller screens */
+    }
+}
+
+/* Learners */
+/* body {
+font-family: Arial, sans-serif;
+text-align: center;
+margin: 0;
+padding: 0;
+background-color: #f8f8f8;
+} */
+.container {
+padding: 20px;
+}
+.title {
+font-size: 24px;
+margin-bottom: 20px;
+}
+.logos {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap: 20px;
+}
+.logo-item {
+display: flex;
+flex-direction: column;
+align-items: center;
+background: #fff;
+padding: 10px;
+border-radius: 8px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+transition: transform 0.3s;
+}
+.logo-item:hover {
+transform: translateY(-5px);
+}
+.logo-item img {
+max-width: 100px;
+height: auto;
+}
+.stars {
+margin-top: 10px;
+color: orange;
+}
+@media (max-width: 768px) {
+.logo-item {
+    max-width: 120px;
+}
+.logo-item img {
+    max-width: 80px;
+}
+}
+@media (max-width: 480px) {
+.logo-item {
+    max-width: 100px;
+}
+.logo-item img {
+    max-width: 60px;
+}
 }

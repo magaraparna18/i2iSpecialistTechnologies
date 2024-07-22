@@ -1,0 +1,45 @@
+
+/* A1 About section start  */
+.rs-history {
+    padding: 50px 0; /* Adjust as needed */
+}
+
+.rs-history .container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.rs-history .image-col {
+    flex: 1 1 30%; /* 40% width for image */
+    max-width: 35%;
+    margin-bottom: 20px; /* For mobile spacing */
+    
+}
+
+.rs-history .text-col {
+    flex: 1 1 70%; /* 60% width for text */
+    max-width: 80%;
+    padding-left: 50px; /* Adjust spacing between columns */
+}
+
+.rs-history img {
+    width: 100%;
+    height: auto;
+    padding-bottom: 40px;
+}
+
+.abt-title h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.about-desc p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+.contact-info{
+    width: 300px;
+    margin-left: 80px;
+    font-size: 23px;
+}
+/* A1 About Section End */

@@ -3,6 +3,7 @@
     
 <!-- Mirrored from keenitsolutions.com/products/html/edulearn/edulearn-demo/index4.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 15 Jul 2024 09:48:49 GMT -->
 <head>
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
         <!-- meta tag -->
         <meta charset="utf-8">
         <title>Edulearn | Responsive Education HTML5 Template</title>
@@ -40,6 +41,46 @@
         <!-- responsive css -->
         <link rel="stylesheet" type="text/css" href="css/responsive.css">
 		<link rel="stylesheet" href="css/index/index.css">
+
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/rsmenu-main.css">
+    <link rel="stylesheet" type="text/css" href="css/rsmenu-transitions.css">
+    <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
+    <link rel="stylesheet" type="text/css" href="fonts/flaticon.css">
+    <link rel="stylesheet" type="text/css" href="fonts/fonts2/flaticon.css">
+    <link rel="stylesheet" type="text/css" href="css/off-canvas.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="stylesheet" href="css/index/index.css">
+
+		 <!-- Sticky navbar style -->
+		 <style>
+			.navbar.sticky-top {
+				position: -webkit-sticky;
+				position: sticky;
+				top: 0;
+				z-index: 1020;
+			
+			}
+			.navbar-custom {
+            background-color: #f8f9fa; /* Change this to your desired background color */
+        }
+		/* Default navbar style */
+.navbar-custom {
+    background-color: #f8f9fa; /* Light background color */
+    transition: background-color 0.3s;
+}
+
+/* Sticky navbar style */
+.sticky-top.rs-header.navbar-custom {
+    background-color: #f8f9fa; /* Ensure it matches the non-sticky color */
+}
+		</style>
+
 		<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     -->
@@ -49,11 +90,11 @@
         <![endif]-->
     </head>
     <body class="home2">
-        
+       
 		
 		<div class="full-width-header">
 			<!-- Toolbar Start -->
-			<div class="rs-toolbar">
+			<!-- <div class="rs-toolbar">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-6">
@@ -68,129 +109,137 @@
 								<div class="toolbar-share-icon">
 									<ul class="list-inline mb-0">
 										<li class="list-inline-item"><a href="https://www.facebook.com/i2ispecialist_Technologies"><i class="fa fa-facebook"></i></a></li>
-										<li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
-										<li class="list-inline-item"><a href="#"><i class="fa fa-google-plus"></i></a></li>
-										<li class="list-inline-item"><a href="https://www.linkedin.com/company/i2ispecialist-technologies-pvt-ltd/posts/?feedView=all"><i class="fa fa-linkedin"></i></a></li>
+											<li class="list-inline-item"><a href="https://www.linkedin.com/company/i2ispecialist-technologies-pvt-ltd/posts/?feedView=all"><i class="fa fa-linkedin"></i></a></li>
 									</ul>
 								</div>
+								
 								<a href="#" class="apply-btn">Apply Now</a>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> -->
 			<!-- Toolbar End -->
-	
+		
+
 			<!-- Header Start -->
-			<header id="rs-header" class="rs-header">
-				<!-- Menu Start -->
+			<header class="navbar navbar-expand-lg navbar-light bg-light sticky-top rs-header navbar-custom" id="rs-header">
 				<div class="menu-area menu-sticky">
 					<div class="container">
-						<div class="row">
-							<div class="col-sm-12 d-flex justify-content-between align-items-center">
-								<div id="logo-sticky" class="mr-3">
-									<a href="index.html">
-										<img src="images/i2iLogo.png" alt="logo" class="img-fluid">
+						<a class="navbar-brand" href="index.html">
+							<img src="images/i2iLogo.png" alt="logo" class="img-fluid" width="100">
+						</a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarNav">
+							<ul class="navbar-nav mr-auto">
+								<li class="nav-item">
+									<a class="nav-link" href="index4.html">Home</a>
+								</li>
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="#" id="aboutUsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										About Us
 									</a>
-								</div>
-								<a class="rs-menu-toggle d-lg-none">
-									<i class="fa fa-bars"></i>Menu
-								</a>
-								<nav class="rs-menu d-none d-lg-block">
-									<ul class="nav-menu list-unstyled mb-0 d-flex">
-										<!-- Home -->
-										<li class="current-menu-item current_page_item menu-item-has-children mr-3">
-											<a href="index4.html" class="home">Home</a>
-										</li>
-										<!-- End Home -->
-			
-										<!-- About Menu Start -->
-										<li class="menu-item-has-children mr-3">
-											<a href="#">About Us</a>
-											
-										</li>
-										<!-- About Menu End -->
-			
-										<!-- Courses Menu Start -->
-<li class="menu-item-has-children mr-3">
-    <a href="#">Courses</a>
-    <ul class="sub-menu list-unstyled">
-        <li class="menu-item-has-children">
-            <a href="#">Full Stack Development</a>
-            <ul class="sub-menu list-unstyled">
-                <li><a href="#">Course Overview</a></li>
-                <li><a href="#">Syllabus</a></li>
-                <li><a href="#">Reviews</a></li>
-            </ul>
-        </li>
-        <li class="menu-item-has-children">
-            <a href="#">Data Science</a>
-            <ul class="sub-menu list-unstyled">
-                <li><a href="#">Course Overview</a></li>
-                <li><a href="#">Syllabus</a></li>
-                <li><a href="#">Reviews</a></li>
-            </ul>
-        </li>
-        <li class="menu-item-has-children">
-            <a href="#">Data Analytics</a>
-            <ul class="sub-menu list-unstyled">
-                <li><a href="#">Course Overview</a></li>
-                <li><a href="#">Syllabus</a></li>
-                <li><a href="#">Reviews</a></li>
-            </ul>
-        </li>
-        <li class="menu-item-has-children">
-            <a href="#">Software Testing</a>
-            <ul class="sub-menu list-unstyled">
-                <li><a href="#">Course Overview</a></li>
-                <li><a href="#">Syllabus</a></li>
-                <li><a href="#">Reviews</a></li>
-            </ul>
-        </li>
-        <li class="menu-item-has-children">
-            <a href="#">Digital Marketing</a>
-            <ul class="sub-menu list-unstyled">
-                <li><a href="#">Course Overview</a></li>
-                <li><a href="#">Syllabus</a></li>
-                <li><a href="#">Reviews</a></li>
-            </ul>
-        </li>
-    </ul>
-</li>
-<!-- Courses Menu End -->
-
-			
-										<!-- Blogs Menu Start -->
-										<li class="menu-item-has-children mr-3">
-											<a href="#">Blogs</a>
-											
-										</li>
-										<!-- Blogs Menu End -->
-										 <!-- FAQ Menu Start -->
-										<li class="menu-item-has-children mr-3">
-											<a href="#">FAQ</a>
-											
-										</li>
-										<!-- FAQ Menu End -->
-			
-										<!-- Contact Menu Start -->
-										<li class="mr-3"><a href="contact.html">Contact Us</a></li>
-										<!-- Contact Menu End -->
-			
-										<!-- Login Menu Start -->
-										<li><a href="contact.html">Login/Register</a></li>
-										<!-- Login Menu End -->
-									</ul>
-								</nav>
-							</div>
+									<div class="dropdown-menu" aria-labelledby="aboutUsDropdown">
+										<a class="dropdown-item" href="about.html">About One</a>
+										<a class="dropdown-item" href="about2.html">About Two</a>
+										<a class="dropdown-item" href="about3.html">About Three</a>
+									</div>
+								</li>
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="#" id="coursesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										Courses
+									</a>
+									<div class="dropdown-menu" aria-labelledby="coursesDropdown">
+										<div class="dropdown">
+											<a class="dropdown-item dropdown-toggle" href="#" id="fullStackDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												Full Stack Development
+											</a>
+											<div class="dropdown-menu" aria-labelledby="fullStackDropdown">
+												<a class="dropdown-item" href="courses.html">Course Overview</a>
+												<a class="dropdown-item" href="syllabus_fullstack.html">Syllabus</a>
+												<a class="dropdown-item" href="reviews_fullstack.html">Reviews</a>
+											</div>
+										</div>
+										<div class="dropdown">
+											<a class="dropdown-item dropdown-toggle" href="#" id="dataScienceDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												Data Science
+											</a>
+											<div class="dropdown-menu" aria-labelledby="dataScienceDropdown">
+												<a class="dropdown-item" href="courses2.html">Course Overview</a>
+												<a class="dropdown-item" href="syllabus_datascience.html">Syllabus</a>
+												<a class="dropdown-item" href="reviews_datascience.html">Reviews</a>
+											</div>
+										</div>
+										<div class="dropdown">
+											<a class="dropdown-item dropdown-toggle" href="#" id="dataAnalyticsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												Data Analytics
+											</a>
+											<div class="dropdown-menu" aria-labelledby="dataAnalyticsDropdown">
+												<a class="dropdown-item" href="courses-details.html">Course Overview</a>
+												<a class="dropdown-item" href="syllabus_dataanalytics.html">Syllabus</a>
+												<a class="dropdown-item" href="reviews_dataanalytics.html">Reviews</a>
+											</div>
+										</div>
+										<div class="dropdown">
+											<a class="dropdown-item dropdown-toggle" href="#" id="softwareTestingDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												Software Testing
+											</a>
+											<div class="dropdown-menu" aria-labelledby="softwareTestingDropdown">
+												<a class="dropdown-item" href="courses-details2.html">Course Overview</a>
+												<a class="dropdown-item" href="syllabus_softwaretesting.html">Syllabus</a>
+												<a class="dropdown-item" href="reviews_softwaretesting.html">Reviews</a>
+											</div>
+										</div>
+										<div class="dropdown">
+											<a class="dropdown-item dropdown-toggle" href="#" id="digitalMarketingDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												Digital Marketing
+											</a>
+											<div class="dropdown-menu" aria-labelledby="digitalMarketingDropdown">
+												<a class="dropdown-item" href="courses-details2.html">Course Overview</a>
+												<a class="dropdown-item" href="syllabus_digitalmarketing.html">Syllabus</a>
+												<a class="dropdown-item" href="reviews_digitalmarketing.html">Reviews</a>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="#" id="blogsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										Blogs
+									</a>
+									<div class="dropdown-menu" aria-labelledby="blogsDropdown">
+										<a class="dropdown-item" href="events.html">Events</a>
+										<a class="dropdown-item" href="events-details.html">Events Details</a>
+									</div>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="contact.html">Contact Us</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="contact.html">Login/Register</a>
+								</li>
+							</ul>
+							<form class="form-inline">
+								<a href="#" class="btn btn-outline-secondary mr-2">WhatsApp Us</a>
+								<a href="#" class="btn btn-outline-secondary">Call Us</a>
+							</form>
 						</div>
 					</div>
 				</div>
-				<!-- Menu End -->
 			</header>
 			
+			<!-- Bootstrap JS and dependencies -->
+			<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+			<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 			<!-- Header End -->
 		</div>
+		
 
 </div>
 <!-- Full width header End -->
@@ -255,353 +304,277 @@
         <!-- Slider Area End -->
 		
 		<!-- Services Start -->
-		<div class="rs-services rs-services-style1">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-3 col-md-6">
-						<div class="services-item rs-animation-hover">
-							<div class="services-icon">
-								<i class="fa fa-american-sign-language-interpreting rs-animation-scale-up"></i>
-							</div>
-							<div class="services-desc">
-								<h4 class="services-title">Trending Courses</h4>
-								<p>Stay ahead with our latest and most popular courses tailored to current industry trends.</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6">
-						<div class="services-item rs-animation-hover">
-							<div class="services-icon">
-								<i class="fa fa-graduation-cap rs-animation-scale-up"></i>
-							</div>
-							<div class="services-desc">
-								<h4 class="services-title">Certification</h4>
-								<p>Earn globally recognized certifications that validate your skills and knowledge.</p>
-							</div>
-						</div>
-					</div>
-					
-					<div class="col-lg-3 col-md-6">
-						<div class="services-item rs-animation-hover">
-							<div class="services-icon">
-								<i class="fa fa-user rs-animation-scale-up"></i>
-							</div>
-							<div class="services-desc">
-								<h4 class="services-title">Training & Experience</h4>
-								<p>Gain real-world experience through our immersive learning programs and projects.</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6">
-						<div class="services-item rs-animation-hover">
-							<div class="services-icon">
-								<i class="fa fa-briefcase rs-animation-scale-up"></i>
-							</div>
-							<div class="services-desc">
-								<h4 class="services-title">100% Placement</h4>
-								<p>Benefit from our strong industry connections and comprehensive placement support.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		
+        <div class="rs-services rs-services-style1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                    	<div class="services-item rs-animation-hover">
+                    	    <div class="services-icon">
+                    	    	<i class="fa fa-american-sign-language-interpreting rs-animation-scale-up"></i>                    	        
+                    	    </div>
+                    	    <div class="services-desc">
+                    	        <h4 class="services-title">Trending Courses</h4>
+                    	        <p>Lorem ipsum dolor sit amet Sed nec molestie justo</p>
+                    	    </div>
+                    	</div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                    	<div class="services-item rs-animation-hover">
+                    	    <div class="services-icon">                    	        
+                    	        <i class="fa fa-book rs-animation-scale-up"></i>
+                    	    </div>
+                    	    <div class="services-desc">
+                    	        <h4 class="services-title">Books & Liberary</h4>
+                    	        <p>Lorem ipsum dolor sit amet Sed nec molestie justo</p>
+                    	    </div>
+                    	</div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                    	<div class="services-item rs-animation-hover">
+                    	    <div class="services-icon">
+                    	        <i class="fa fa-user rs-animation-scale-up"></i>
+                    	    </div>
+                    	    <div class="services-desc">
+                    	        <h4 class="services-title">Certified Teachers</h4>
+                    	        <p>Lorem ipsum dolor sit amet Sed nec molestie justo</p>
+                    	    </div>
+                    	</div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                    	<div class="services-item rs-animation-hover">
+                    	    <div class="services-icon">
+                    	        <i class="fa fa-graduation-cap rs-animation-scale-up"></i>
+                    	    </div>
+                    	    <div class="services-desc">
+                    	        <h4 class="services-title">Certification</h4>
+                    	        <p>Lorem ipsum dolor sit amet Sed nec molestie justo</p>
+                    	    </div>
+                    	</div>
+                    </div>
+                </div>
+            </div>
+        </div>
 		<!-- Services End -->
 
 		<!-- About Us Start -->
-		<div class="container1 container">
-			<div class="row">
-				<div class="content col-md-6 col-sm-12">
-					<h1>About Us</h1>
-					<p>Upshot Technologies is the best Software Training Center in Bangalore. Since its inception, we have helped individuals harness the power of new technologies and processes. We are the Top Software Training Institutes in Bangalore. Our mission has never been more relevant, and we take great pride in helping our learners stay ahead of the technology curve and succeed.</p>
-					<a href="#">Read More</a>
-					<h2>Why Upshot Technologies?</h2>
-					<p>We deliver excellent training aligning with foundational Quality and Assurance for a great career success. 100% Placement Support and Real-time Training. World-renowned reputation for all the courses taught here and 100% placement in all the previous batches of every course till now.</p>
-					<ul>
-						<li>World’s foremost experts in each course will train you and help you achieve expert-level skills and knowledge.</li>
-						<li>Most detailed but simple and easy-to-understand study materials, prepared and often updated by our own experts.</li>
-						<li>Flexible fees structure with certain allowances or considerable discounts for the deprived but brilliant students.</li>
-						<li>Versatile batch timings on weekdays to choose depending on your availability and fixed batch timings on weekends for working people.</li>
-					</ul>
-				</div>
-				<div class="image1 col-md-6 col-sm-12">
-					<img src="path-to-your-image.jpg" alt="Upshot Technologies">
-				</div>
-			</div>
-		</div>
+        <div id="rs-about-2" class="rs-about-2 sec-spacer">
+            <div class="container">
+                <div class="row rs-vertical-bottom">
+                    <div class="col-lg-7 col-md-12">
+                    	<div class="sec-title mb-30">
+                		    <h2>ABOUT US</h2>      
+                			<p>Fusce sem dolor, interdum in efficitur at, faucibus.</p>
+                    	</div>
+                    	<p class="mobile-mb-50">
+                    		On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized.can I get some?There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected yours humour, or randomised words which don't look even slightly believable.
+                    	</p>
+                    	<div class="row about-signature">
+                    		<div class="col-md-6">
+                    			<h4>Rashid Mahabub Shojib</h4>
+                    			<span>Vice Chancellor (vc)</span>
+                    		</div>
+                    		<div class="col-md-6 text-right">
+                    			<img src="images/about/signature.png" alt="signature">
+                    		</div>
+                    	</div>
+                    </div>
+                    <div class="col-lg-5 col-md-12">
+                        <div class="about-img rs-image-effect-shine">
+							<img src="images/about/about2.jpg" alt="img02">
+						</div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- About Us End -->
 
 		<!-- Courses Start -->
-		<div id="rs-courses" class="rs-courses sec-color sec-spacer">
+        <div id="rs-courses" class="rs-courses sec-color sec-spacer">
 			<div class="container">
 				<div class="row rs-vertical-middle">
-					<div class="col-lg-4 col-md-12">
-						<div class="sec-title mb-30">
-							<h2>POPULAR COURSES</h2>      
+				    <div class="col-lg-4 col-md-12">
+				    	<div class="sec-title mb-30">
+						    <h2>POPULAR COURSES</h2>      
 							<p>Fusce sem dolor inter in efficitur faucibus.</p>
-						</div>
-						<p class="mobile-mb-50">
-							On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized.
-						</p>
-					</div>
-					<div class="col-lg-8 col-md-12">
+				    	</div>
+				    	<p class="mobile-mb-50">
+				    		On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized
+				    		.
+				    	</p>
+				    </div>
+			        <div class="col-lg-8 col-md-12">
 						<div class="rs-carousel owl-carousel rs-navigation-2" data-loop="true" data-items="2" data-margin="30" data-autoplay="false" data-autoplay-timeout="5000" data-smart-speed="1200" data-dots="true" data-nav="true" data-nav-speed="false" data-mobile-device="1" data-mobile-device-nav="true" data-mobile-device-dots="true" data-ipad-device="2" data-ipad-device-nav="true" data-ipad-device-dots="true" data-md-device="2" data-md-device-nav="true" data-md-device-dots="true">
-		
-							<!-- Full Stack Development -->
-							<div class="cource-item">
-								<div class="cource-img">
-									<img src="images/courses/full-stack.jpg" alt="Full Stack Development" />
-									<a class="image-link" href="courses-details.html" title="Full Stack Development">
-										<i class="fa fa-link"></i>
-									</a>
-									<span class="course-value">$500</span>
-								</div>
-								<div class="course-body">
-									<a href="#" class="course-category">Technology</a>
-									<h4 class="course-title"><a href="courses-details.html">Full Stack Development</a></h4>
-									<div class="review-wrap">
-										<ul class="rating">
-											<li class="fa fa-star"></li>
-											<li class="fa fa-star"></li>
-											<li class="fa fa-star"></li>
-											<li class="fa fa-star"></li>
-											<li class="fa fa-star-half-empty"></li>
-										</ul>
-										<span class="review">45 Reviews</span>
-									</div>
-									<div class="course-desc">
-										<p>
-											Learn to develop both client and server software.
-										</p>
-									</div>
-								</div>
-								<div class="course-footer">
-									<div class="course-time">
-										<span class="label">Course Time</span>
-										<span class="desc">6 Months</span>
-									</div>
-									<div class="course-student">
-										<span class="label">Course Student</span>
-										<span class="desc">150</span>
-									</div>
-									<div class="class-duration">
-										<span class="label">Class Duration</span>
-										<span class="desc">9:00-5:00</span>
-									</div>
-								</div>
-							</div>
-		
-							<!-- Data Science -->
-							<div class="cource-item">
-								<div class="cource-img">
-									<img src="images/courses/data-science.jpg" alt="Data Science" />
-									<a class="image-link" href="courses-details.html" title="Data Science">
-										<i class="fa fa-link"></i>
-									</a>
-									<span class="course-value">$600</span>
-								</div>
-								<div class="course-body">
-									<a href="#" class="course-category">Science</a>
-									<h4 class="course-title"><a href="courses-details.html">Data Science</a></h4>
-									<div class="review-wrap">
-										<ul class="rating">
-											<li class="fa fa-star"></li>
-											<li class="fa fa-star"></li>
-											<li class="fa fa-star"></li>
-											<li class="fa fa-star"></li>
-											<li class="fa fa-star-half-empty"></li>
-										</ul>
-										<span class="review">60 Reviews</span>
-									</div>
-									<div class="course-desc">
-										<p>
-											Understand data analysis and machine learning techniques.
-										</p>
-									</div>
-								</div>
-								<div class="course-footer">
-									<div class="course-time">
-										<span class="label">Course Time</span>
-										<span class="desc">8 Months</span>
-									</div>
-									<div class="course-student">
-										<span class="label">Course Student</span>
-										<span class="desc">200</span>
-									</div>
-									<div class="class-duration">
-										<span class="label">Class Duration</span>
-										<span class="desc">9:00-5:00</span>
-									</div>
-								</div>
-							</div>
-		
-							<!-- Data Analytics -->
-							<div class="cource-item">
-								<div class="cource-img">
-									<img src="images/courses/data-analytics.jpg" alt="Data Analytics" />
-									<a class="image-link" href="courses-details.html" title="Data Analytics">
-										<i class="fa fa-link"></i>
-									</a>
-									<span class="course-value">$550</span>
-								</div>
-								<div class="course-body">
-									<a href="#" class="course-category">Business</a>
-									<h4 class="course-title"><a href="courses-details.html">Data Analytics</a></h4>
-									<div class="review-wrap">
-										<ul class="rating">
-											<li class="fa fa-star"></li>
-											<li class="fa fa-star"></li>
-											<li class="fa fa-star"></li>
-											<li class="fa fa-star"></li>
-											<li class="fa fa-star-half-empty"></li>
-										</ul>
-										<span class="review">30 Reviews</span>
-									</div>
-									<div class="course-desc">
-										<p>
-											Learn to analyze and visualize data for business decisions.
-										</p>
-									</div>
-								</div>
-								<div class="course-footer">
-									<div class="course-time">
-										<span class="label">Course Time</span>
-										<span class="desc">7 Months</span>
-									</div>
-									<div class="course-student">
-										<span class="label">Course Student</span>
-										<span class="desc">180</span>
-									</div>
-									<div class="class-duration">
-										<span class="label">Class Duration</span>
-										<span class="desc">9:00-5:00</span>
-									</div>
-								</div>
-							</div>
-		
-							<!-- Software Testing -->
-							<div class="cource-item">
-								<div class="cource-img">
-									<img src="images/courses/software-testing.jpg" alt="Software Testing" />
-									<a class="image-link" href="courses-details.html" title="Software Testing">
-										<i class="fa fa-link"></i>
-									</a>
-									<span class="course-value">$450</span>
-								</div>
-								<div class="course-body">
-									<a href="#" class="course-category">Technology</a>
-									<h4 class="course-title"><a href="courses-details.html">Software Testing</a></h4>
-									<div class="review-wrap">
-										<ul class="rating">
-											<li class="fa fa-star"></li>
-											<li class="fa fa-star"></li>
-											<li class="fa fa-star"></li>
-											<li class="fa fa-star"></li>
-											<li class="fa fa-star-half-empty"></li>
-										</ul>
-										<span class="review">40 Reviews</span>
-									</div>
-									<div class="course-desc">
-										<p>
-											Master the fundamentals of software testing and QA.
-										</p>
-									</div>
-								</div>
-								<div class="course-footer">
-									<div class="course-time">
-										<span class="label">Course Time</span>
-										<span class="desc">6 Months</span>
-									</div>
-									<div class="course-student">
-										<span class="label">Course Student</span>
-										<span class="desc">120</span>
-									</div>
-									<div class="class-duration">
-										<span class="label">Class Duration</span>
-										<span class="desc">9:00-5:00</span>
-									</div>
-								</div>
-							</div>
-		
-							<!-- Digital Marketing -->
-							<div class="cource-item">
-								<div class="cource-img">
-									<img src="images/courses/digital-marketing.jpg" alt="Digital Marketing" />
-									<a class="image-link" href="courses-details.html" title="Digital Marketing">
-										<i class="fa fa-link"></i>
-									</a>
-									<span class="course-value">$400</span>
-								</div>
-								<div class="course-body">
-									<a href="#" class="course-category">Business</a>
-									<h4 class="course-title"><a href="courses-details.html">Digital Marketing</a></h4>
-									<div class="review-wrap">
-										<ul class="rating">
-											<li class="fa fa-star"></li>
-											<li class="fa fa-star"></li>
-											<li class="fa fa-star"></li>
-											<li class="fa fa-star"></li>
-											<li class="fa fa-star-half-empty"></li>
-										</ul>
-										<span class="review">50 Reviews</span>
-									</div>
-									<div class="course-desc">
-										<p>
-											Learn the latest techniques in digital marketing.
-										</p>
-									</div>
-								</div>
-								<div class="course-footer">
-									<div class="course-time">
-										<span class="label">Course Time</span>
-										<span class="desc">5 Months</span>
-									</div>
-									<div class="course-student">
-										<span class="label">Course Student</span>
-										<span class="desc">170</span>
-									</div>
-									<div class="class-duration">
-										<span class="label">Class Duration</span>
-										<span class="desc">9:00-5:00</span>
-									</div>
-								</div>
-							</div>
-		
-						</div>
-					</div>
-				</div>
+			                <div class="cource-item">
+			                    <div class="cource-img">
+			                        <img src="images/courses/1.jpg" alt="" />
+                                    <a class="image-link" href="courses-details.html" title="University Tour 2018">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+			                        <span class="course-value">$450</span>
+			                    </div>
+			                    <div class="course-body">
+			                    	<a href="#" class="course-category">Science</a>
+			                    	<h4 class="course-title"><a href="courses-details.html">Electrical Engineering</a></h4>
+			                    	<div class="review-wrap">
+			                    		<ul class="rating">
+			                    		    <li class="fa fa-star"></li>
+			                    		    <li class="fa fa-star"></li>
+			                    		    <li class="fa fa-star"></li>
+			                    		    <li class="fa fa-star"></li>
+			                    		    <li class="fa fa-star-half-empty"></li>
+			                    		</ul>
+			                    		<span class="review">25 Reviews</span>
+			                    	</div>
+			                    	<div class="course-desc">
+			                    		<p>
+			                    			Cras ultricies lacus consectetur, consectetur
+			                    			scelerisque arcu curabitur
+			                    		</p>
+			                    	</div>
+			                    </div>
+			                    <div class="course-footer">
+			                    	<div class="course-time">
+			                    		<span class="label">Course Time</span>
+			                    		<span class="desc">3 Year</span>
+			                    	</div>
+			                    	<div class="course-student">
+			                    		<span class="label">Course Student</span>
+			                    		<span class="desc">95</span>
+			                    	</div>
+			                    	<div class="class-duration">
+			                    		<span class="label">Class Duration</span>
+			                    		<span class="desc">8:30-4:00</span>
+			                    	</div>
+			                    </div>
+			                </div>
+			                <div class="cource-item">
+			                    <div class="cource-img">
+			                        <img src="images/courses/2.jpg" alt="" />
+                                    <a class="image-link" href="courses-details.html" title="University Tour 2018">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+			                        <span class="course-value">$450</span>
+			                    </div>
+			                    <div class="course-body">
+			                    	<a href="#" class="course-category">Science</a>
+			                    	<h4 class="course-title"><a href="courses-details.html">Computer Engineering</a></h4>
+			                    	<div class="review-wrap">
+			                    		<ul class="rating">
+			                    		    <li class="fa fa-star"></li>
+			                    		    <li class="fa fa-star"></li>
+			                    		    <li class="fa fa-star"></li>
+			                    		    <li class="fa fa-star"></li>
+			                    		    <li class="fa fa-star-half-empty"></li>
+			                    		</ul>
+			                    		<span class="review">39 Reviews</span>
+			                    	</div>
+			                    	<div class="course-desc">
+			                    		<p>
+			                    			Cras ultricies lacus consectetur, consectetur
+			                    			scelerisque arcu curabitur
+			                    		</p>
+			                    	</div>
+			                    </div>
+			                    <div class="course-footer">
+			                    	<div class="course-time">
+			                    		<span class="label">Course Time</span>
+			                    		<span class="desc">4 Years</span>
+			                    	</div>
+			                    	<div class="course-student">
+			                    		<span class="label">Course Student</span>
+			                    		<span class="desc">99</span>
+			                    	</div>
+			                    	<div class="class-duration">
+			                    		<span class="label">Class Duration</span>
+			                    		<span class="desc">8:30-4:00</span>
+			                    	</div>
+			                    </div>
+			                </div>
+			                <div class="cource-item">
+			                    <div class="cource-img">
+			                        <img src="images/courses/3.jpg" alt="" />
+                                    <a class="image-link" href="courses-details.html" title="University Tour 2018">
+                                        <i class="fa fa-link"></i>
+                                    </a>
+			                        <span class="course-value">$450</span>
+			                    </div>
+			                    <div class="course-body">
+			                    	<a href="#" class="course-category">Science</a>
+			                    	<h4 class="course-title"><a href="courses-details.html">Civil Engineering</a></h4>
+			                    	<div class="review-wrap">
+			                    		<ul class="rating">
+			                    		    <li class="fa fa-star"></li>
+			                    		    <li class="fa fa-star"></li>
+			                    		    <li class="fa fa-star"></li>
+			                    		    <li class="fa fa-star"></li>
+			                    		    <li class="fa fa-star-half-empty"></li>
+			                    		</ul>
+			                    		<span class="review">22 Reviews</span>
+			                    	</div>
+			                    	<div class="course-desc">
+			                    		<p>
+			                    			Cras ultricies lacus consectetur, consectetur
+			                    			scelerisque arcu curabitur
+			                    		</p>
+			                    	</div>
+			                    </div>
+			                    <div class="course-footer">
+			                    	<div class="course-time">
+			                    		<span class="label">Course Time</span>
+			                    		<span class="desc">3.5 Years</span>
+			                    	</div>
+			                    	<div class="course-student">
+			                    		<span class="label">Course Student</span>
+			                    		<span class="desc">80</span>
+			                    	</div>
+			                    	<div class="class-duration">
+			                    		<span class="label">Class Duration</span>
+			                    		<span class="desc">8:30-4:00</span>
+			                    	</div>
+			                    </div>
+			                </div>
+			            </div>
+			        </div>
+			    </div>
 			</div>
-		</div>
-		
+        </div>
         <!-- Courses End -->
 		
 		<!-- Counter Up Section Start-->
-		<div class="container">
-			<div class="title">9000+ Satisfied Learners</div>
-			<div class="logos">
-				<div class="logo-item">
-					<img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google">
-					<div class="stars">★★★★★</div>
-				</div>
-				<div class="logo-item">
-					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/JustDial_logo.svg/1200px-JustDial_logo.svg.png" alt="Justdial">
-					<div class="stars">★★★★★</div>
-				</div>
-				<div class="logo-item">
-					<img src="https://yet5.com/images/logo.png" alt="Yet5">
-					<div class="stars">★★★★★</div>
-				</div>
-				<div class="logo-item">
-					<img src="https://www.urbanpro.com/assets/new-ui/v6/logos/urbanpro-logo.png" alt="UrbanPro">
-					<div class="stars">★★★★★</div>
-				</div>
-				<div class="logo-item">
-					<img src="https://sulcdn.azureedge.net/content/images/sulekhalogo17.png" alt="Sulekha">
-					<div class="stars">★★★★★</div>
-				</div>
-			</div>
-		</div>
+        <div class="rs-counter pt-100 pb-70 bg3">
+            <div class="container">
+                <div class="sec-title white-text mb-50 text-center">
+                    <h2>ACHEIVEMENTS</h2>      
+                    <p>Fusce sem dolor, interdum in efficitur at, faucibus nec lorem. Sed nec molestie justo.</p>
+                </div>
+        		<div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="rs-counter-list">
+                            <h2 class="counter-number plus">60</h2>                  
+                            <h4 class="counter-desc">TEACHERS</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="rs-counter-list">
+                            <h2 class="counter-number plus">40</h2>
+                            <h4 class="counter-desc">COURSES</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="rs-counter-list">
+                            <h2 class="counter-number plus">900</h2>                  
+                            <h4 class="counter-desc">STUDENTS</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="rs-counter-list">
+                            <h2 class="counter-number plus">3675</h2>
+                            <h4 class="counter-desc">Satisfied Client</h4>
+                        </div>
+                    </div>
+        		</div>
+            </div>
+        </div>
         <!-- Counter Up Section End -->
 
 		<!-- Events Start -->
