@@ -1,13 +1,20 @@
+/* Full-width header */
 .full-width-header {
     width: 100%;
 }
+
+/* Toolbar styles */
 .rs-toolbar {
-    background-color: #161616;
-    padding: 10px 0;
+    background-color: #2e2d2d;
+    padding: 2px 0;
 }
+
+/* Welcome message font size */
 .welcome-message {
     font-size: 16px;
 }
+
+/* Apply button styles */
 .apply-btn {
     background-color: #007bff;
     color: #fff;
@@ -15,18 +22,22 @@
     border-radius: 5px;
     text-decoration: none;
 }
+
+/* Header contact styles */
 .header-contact {
     display: flex;
     align-items: center;
 }
+
 /* Space between logo and menu items */
 #logo-sticky {
-    margin-right: 20px; /* Adjust as needed */
+    margin-right: 100px; /* Adjust as needed */
 }
 
 /* Space between menu items */
 .nav-menu > li {
-    margin-right: 20px; /* Adjust as needed */
+    
+    margin-right: 0px; /* Adjust as needed */
 }
 
 /* Space between menu items and last item */
@@ -48,7 +59,8 @@
 .rs-menu-toggle {
     margin-left: 20px; /* Adjust as needed */
 }
-/* Style for the main sub-menu */
+
+/* Main sub-menu styles */
 .menu-item-has-children .sub-menu {
     display: none; /* Hide sub-menus by default */
     position: absolute; /* Position relative to the parent */
@@ -62,7 +74,7 @@
     z-index: 1000; /* Ensure it appears above other content */
 }
 
-/* Style for the nested sub-menu */
+/* Nested sub-menu styles */
 .menu-item-has-children .sub-menu .sub-menu {
     top: 0; /* Align to the right of the parent */
     left: 100%; /* Move to the right of the parent */
@@ -74,7 +86,7 @@
     display: block;
 }
 
-/* Style for submenu items */
+/* Submenu item styles */
 .sub-menu li {
     position: relative;
 }
@@ -83,104 +95,153 @@
     display: block;
     padding: 10px;
     text-decoration: none;
-    color: #333; /* Adjust text color */
+    color: #fff; /* Adjust text color */
 }
 
 /* Hover effect for submenu items */
 .sub-menu a:hover {
-    background: #f0f0f0; /* Adjust hover background color */
+    background: #007bff; /* Adjust hover background color */
+    color: #fff; /* Adjust hover text color */
+}
+
+/* Adjust submenu item background color */
+.sub-menu {
+    background-color: #292828; /* Adjust background color */
+    border: 1px solid #333; /* Adjust border color */
+}
+
+/* Additional responsive styles */
+@media (max-width: 576px) {
+    .rs-menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-menu > li {
+        margin-right: 0;
+    
+        margin-bottom: 10px; /* Space between menu items in mobile view */
+    }
+
+    .nav-menu > li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+/* Custom styles for toggle button */
+.rs-menu-toggle {
+    cursor: pointer;
+}
+
+/* Active state for menu toggle button */
+.rs-menu-toggle.active + .rs-menu {
+    display: block;
+    background: #FFFFFF; /* Adjust background color for mobile menu */
+    width: 100%; /* Full width for mobile menu */
+    color: black;
+}
+
+/* Styling for mobile menu items */
+.rs-menu-toggle.active + .rs-menu .nav-menu {
+    flex-direction: column;
+    width: 100%; /* Full width for mobile menu items */
+}
+/* Menu background color */
+.rs-header .menu-area {
+    background-color:#FFFFFF;
+}
+
+/* Menu link color */
+.rs-header .nav-menu > li > a {
+    
+    color: #1111; /* Change this to the desired link color */
+}
+
+/* Menu link hover color */
+.rs-header .nav-menu > li > a:hover {
+    color: #555555; /* Change this to the desired hover color */
 }
 
 
 /* About section css */
-.container1 {
-    padding: 20px;
-    background-color: #f9f9f9; /* Background color for the container */
-    border-radius: 10px; /* Rounded corners for the container */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for the container */
-    margin-top: 20px; /* Top margin to separate from other content */
+.rs-history .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
-.content {
-    padding: 20px;
-    background-color: #fff; /* Background color for the content */
-    border-radius: 10px; /* Rounded corners for the content */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for the content */
-    margin-bottom: 20px; /* Bottom margin for spacing */
+.image-col, .text-col {
+    flex: 1;
+    min-width: 300px; /* Adjust as needed */
+    margin: 20px;
+    box-sizing: border-box;
 }
 
-.content h1, .content h2 {
-    color: #333; /* Text color for headings */
-    margin-bottom: 10px; /* Margin bottom for spacing */
+.text-col {
+    order: 1; /* Text comes first in the flow */
 }
 
-.content p {
-    color: #666; /* Text color for paragraphs */
-    margin-bottom: 10px; /* Margin bottom for spacing */
-    line-height: 1.6; /* Line height for readability */
+.image-col {
+    order: 2; /* Image comes second in the flow */
 }
 
-.content ul {
-    margin-top: 10px;
-    padding-left: 20px; /* Padding left for list indentation */
+.about-desc {
+    text-align: justify;
 }
 
-.content ul li {
-    color: #666; /* Text color for list items */
-    margin-bottom: 10px; /* Margin bottom for spacing */
-    line-height: 1.6; /* Line height for readability */
+.abt-title h2 {
+    margin: 0;
+    padding: 0;
 }
 
-.content a {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 20px; /* Padding for the button */
-    background-color: #007bff; /* Background color for the button */
-    color: #fff; /* Text color for the button */
-    border-radius: 5px; /* Rounded corners for the button */
-    text-decoration: none; /* Remove underline from the link */
-    transition: background-color 0.3s; /* Smooth transition for hover effect */
+.sec-spacer {
+    padding: 40px 0;
 }
 
-.content a:hover {
-    background-color: #0056b3; /* Background color on hover */
-}
-
-.image1 img {
-    width: 100%; /* Full width for the image */
-    border-radius: 10px; /* Rounded corners for the image */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for the image */
-    object-fit: cover; /* Cover the container without stretching */
-}
-
-/* Responsive adjustments */
-@media (max-width: 767px) {
-    .container1 {
-        padding: 10px; /* Adjust padding for smaller screens */
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .content {
-        margin-bottom: 10px; /* Adjust margin for smaller screens */
-        padding: 15px; /* Adjust padding for smaller screens */
+    .text-col, .image-col {
+        max-width: 100%;
+        margin: 10px 0;
     }
 
-    .content h1, .content h2 {
-        font-size: 1.5rem; /* Adjust font size for smaller screens */
+    .text-col {
+        order: 1;
     }
 
-    .content p, .content ul li {
-        font-size: 1rem; /* Adjust font size for smaller screens */
-    }
-
-    .content a {
-        padding: 8px 16px; /* Adjust padding for smaller screens */
-        font-size: 1rem; /* Adjust font size for smaller screens */
-    }
-
-    .image1 img {
-        margin-bottom: 10px; /* Add bottom margin for smaller screens */
-    }
+   
 }
+.image-col {
+    position: relative;
+}
+
+.contact-info-wrapper {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Optional: add a background for better readability */
+    padding: 10px 0; /* Adjust padding as needed */
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+
+.contact-info {
+    background-color: rgba(255, 255, 255, 0.8); /* Optional: add a background for better readability */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
 
 /* Learners */
 /* body {
