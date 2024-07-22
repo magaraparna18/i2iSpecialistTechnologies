@@ -50,7 +50,7 @@
         <![endif]-->
 
 	<!-- Courses CSS File -->
-	<link rel="stylesheet" href="courses.css">
+	<link rel="stylesheet" href="css/courses.css">
 
 
 
@@ -61,46 +61,58 @@
 
 
 <body class="inner-page">
+	<!-- Offer Content Start -->
 	<div class="col-md-12 text-center">
 		<ul>
-
-
 			<div class="col-md-12 text-center offer-ad"
-				style="background-color: #070404; padding: 30px; border-radius: 15px; color: white; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);">
+				style="background-color: #226eb6; padding: 30px; border-radius: 15px; color: white; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);">
 				<h2 style="color: #fd580c; font-size: 32px; margin-bottom: 20px;">Limited Time Offer!</h2>
-				<p style="font-size: 20px; color: white;">Originally priced at <s>₹5000</s> each, join now for only
-					<u><b style="font-size: 24px; color: #FF4500;">₹2500</b></u> each!</p>
+				<p style="font-size: 20px; color: white;">Originally priced at <s style="font-size: 20px;color:#0e0a08">₹5000</s> each, join now for only
+					<u><b style="font-size: 24px; color: #070606;">₹2500</b></u> each!</p>
 				<div id="countdown" style="font-size: 24px; margin-top: 20px; color: #FF4500;"></div>
+				<div id="counter" style="font-size: 20px; color: white; margin-top: 10px;"></div>
 			</div>
-
+	
 			<script>
-				// Set the date we're counting down to
-				var countDownDate = new Date().getTime() + 50 * 60 * 1000;
-
+				// Set the date we're counting down to (4 days from now)
+				var countDownDate = new Date().getTime() + 4 * 24 * 60 * 60 * 1000;
+	
 				// Update the count down every 1 second
 				var countdownfunction = setInterval(function () {
 					// Get today's date and time
 					var now = new Date().getTime();
-
+	
 					// Find the distance between now and the count down date
 					var distance = countDownDate - now;
-
-					// Time calculations for minutes and seconds
+	
+					// Time calculations for days, hours, minutes and seconds
+					var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+					var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
 					var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 					var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
+	
 					// Display the result in the element with id="countdown"
-					document.getElementById("countdown").innerHTML = minutes + "m " + seconds + "s ";
-
+					document.getElementById("countdown").innerHTML = days + " Days are Left ";
+	
+					// Display the result in the element with id="counter"
+					document.getElementById("counter").innerHTML = hours + "h " +
+						minutes + "m " + seconds + "s ";
+	
 					// If the count down is over, write some text 
 					if (distance < 0) {
 						clearInterval(countdownfunction);
 						document.getElementById("countdown").innerHTML = "EXPIRED";
+						document.getElementById("counter").innerHTML = "";
 					}
 				}, 1000);
 			</script>
-
+		</ul>
 	</div>
+	
+	
+
+	<!-- Offer Content End -->
+	
 
 <!-- Header Start -->
 <header id="rs-header" class="rs-header mt-0" >
@@ -127,14 +139,14 @@
 
 							<!-- About Menu Start -->
 							<li class="menu-item-has-children mr-3">
-								<a href="#">About Us</a>
+								<a href="about.html">About Us</a>
 								
 							</li>
 							<!-- About Menu End -->
 
 							<!-- Courses Menu Start -->
 <li class="menu-item-has-children mr-3">
-<a href="#">Courses</a>
+<a href="courses.html">Courses</a>
 <ul class="sub-menu list-unstyled">
 <li class="menu-item-has-children">
 <a href="#">Full Stack Development</a>
@@ -456,57 +468,94 @@
 	</div>
 	<!-- Courses End -->
 
+	<!-- Courses Features -->
+	
+
+<div >
+    <div class="slider-container">
+
+<!-- cards 2 cards 2 cards 2  -->
+<div class="container">
+    <div class="row">
+        <!-- Course Features Section -->
+        <div style="width:40%">
+            <div class="sidebar-area">
+                <div class="card course-features-info">
+                    <h4 class="desc-title">Course Features</h4>
+                    <ul>
+                        <li><i class="fa fa-files-o"></i> <span class="label">Lectures</span> <span class="value">9</span></li>
+                        <li><i class="fa fa-clock-o"></i> <span class="label">Duration</span> <span class="value">As Per Selected Course hours</span></li>
+                        <li><i class="fa fa-level-up"></i> <span class="label">Skill level</span> <span class="value">All levels</span></li>
+                        <li><i class="fa fa-language"></i> <span class="label">Language</span> <span class="value">English</span></li>
+                        <li><i class="fa fa-users"></i> <span class="label">Students</span> <span class="value">560</span></li>
+                        <li><i class="fa fa-check-square-o"></i> <span class="label">Assessments</span> <span class="value">Yes</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Form Section -->
+        <div class="col-md-7">
+            <div class="sidebar-area">
+                <div class="card contact-form">
+                    <h4 class="desc-title">Get Course Fees & Discount</h4>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Your Name*</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email ID</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number*</label>
+                            <input type="text" class="form-control" id="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="course">Select Course</label>
+                            <select class="form-control" id="course">
+                                <option>Course 1</option>
+                                <option>Course 2</option>
+                                <option>Course 3</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="start">Planning To Start Training</label>
+                            <select class="form-control" id="start">
+                                <option>Immediate</option>
+                                <option>Within a month</option>
+                                <option>Later</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="location">Location</label>
+                            <input type="text" class="form-control" id="location">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea class="form-control" id="message" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Book A Demo</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+		
+
+
+    </div>
+</div>
+
+	
 
 
 
-	<div class="col-lg-4 col-md-12">
-		<div class="sidebar-area">
-			<div class="course-features-info">
-				<h4 class="desc-title">Course Features</h4>
-				<ul>
-					<li><i class="fa fa-files-o"></i> <span class="label">Lectures</span> <span class="value">9</span>
-					</li>
-					<li><i class="fa fa-clock-o"></i> <span class="label">Duration</span> <span class="value">1.5
-							hours</span></li>
-					<li><i class="fa fa-level-up"></i> <span class="label">Skill level</span> <span class="value">All
-							level</span></li>
-					<li><i class="fa fa-language"></i> <span class="label">Language</span> <span
-							class="value">English</span></li>
-					<li><i class="fa fa-users"></i> <span class="label">Students</span> <span class="value">560</span>
-					</li>
-					<li><i class="fa fa-check-square-o"></i> <span class="label">Assessments</span> <span
-							class="value">Yes</span></li>
-				</ul>
-			</div>
-			<div class="cate-box">
-				<h3 class="title">Courses Categories</h3>
-				<ul>
-					<li>
-						<i class="fa fa-angle-right" aria-hidden="true"></i> <a href="#">Learning
-							Centers<span>(05)</span></a>
-					</li>
-					<li>
-						<i class="fa fa-angle-right" aria-hidden="true"></i> <a href="#">Video Reviews
-							<span>(07)</span></a>
-					</li>
-					<li>
-						<i class="fa fa-angle-right" aria-hidden="true"></i> <a href="#">Engineering Tech
-							<span>(09)</span></a>
-					</li>
-					<li>
-						<i class="fa fa-angle-right" aria-hidden="true"></i> <a href="#"> Righteous Indignation
-							<span>(08)</span></a>
-					</li>
-					<li>
-						<i class="fa fa-angle-right" aria-hidden="true"></i> <a href="#">General Education
-							<span>(04)</span></a>
-					</li>
-				</ul>
-			</div>
 
-
-		</div>
-	</div>
+	
 	</div>
 	</div>
 	<div class="container pt-45">
@@ -688,5 +737,8 @@
 </body>
 
 <!-- Mirrored from keenitsolutions.com/products/html/edulearn/edulearn-demo/courses-details2.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 15 Jul 2024 09:49:38 GMT -->
+
+ <!-- Link to your external JavaScript file -->
+    <script src="coursespage1.js"></script>
 
 </html>

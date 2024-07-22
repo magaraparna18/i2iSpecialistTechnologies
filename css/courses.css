@@ -1,0 +1,32 @@
+.sidebar-area {
+    margin: 20px 0;
+}
+.card {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.course-features-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+.course-features-info li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.course-features-info .label {
+    flex: 1;
+}
+.course-features-info .value {
+    font-weight: bold;
+}
+.course-features-info i {
+    margin-right: 10px;
+}
+.desc-title {
+    margin-bottom: 20px;
+}
+.form-group label {
+    font-weight: bold;
+}
