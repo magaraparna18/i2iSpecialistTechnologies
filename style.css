@@ -498,12 +498,12 @@ ul {
 ::-moz-selection {
   background: #ff3115;
   text-shadow: none;
-  color: #ffffff;
+  color: black;
 }
 ::selection {
   background: #ff3115;
   text-shadow: none;
-  color: #ffffff;
+  color: black;
 }
 .sec-spacer {
   padding: 100px 0;

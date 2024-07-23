@@ -230,7 +230,7 @@
 	<div id="rs-courses-3" class="rs-courses-3 sec-spacer">
 		<div class="container">
 			<div class="abt-title">
-				<h2>OUR COURSES</h2>
+				<h2 style="margin-bottom:20px">OUR COURSES</h2>
 
 			</div>
 			<div class="gridFilter">
@@ -478,10 +478,10 @@
 <div class="container">
     <div class="row">
         <!-- Course Features Section -->
-        <div style="width:40%">
+        <div class="col-md-12 col-lg-6">
             <div class="sidebar-area">
                 <div class="card course-features-info">
-                    <h4 class="desc-title">Course Features</h4>
+                    <h4 class="desc-title" style="text-align:center">Course Features</h4>
                     <ul>
                         <li><i class="fa fa-files-o"></i> <span class="label">Lectures</span> <span class="value">9</span></li>
                         <li><i class="fa fa-clock-o"></i> <span class="label">Duration</span> <span class="value">As Per Selected Course hours</span></li>
@@ -495,48 +495,45 @@
         </div>
 
         <!-- Contact Form Section -->
-        <div class="col-md-7">
+        <div class="col-md-12 col-lg-6">
             <div class="sidebar-area">
                 <div class="card contact-form">
-                    <h4 class="desc-title">Get Course Fees & Discount</h4>
-                    <form>
+                    <h4 class="desc-title" style="color:red; margin-top:10px; text-align:center;">Get Course Fees & Discount</h4>
+                    <form id="contactForm">
                         <div class="form-group">
                             <label for="name">Your Name*</label>
-                            <input type="text" class="form-control" id="name" required>
+                            <input type="text" class="form-control" id="name" required minlength="2">
                         </div>
                         <div class="form-group">
                             <label for="email">Your Email ID</label>
-                            <input type="email" class="form-control" id="email">
+                            <input type="email" class="form-control" id="email" required>
                         </div>
                         <div class="form-group">
                             <label for="phone">Phone Number*</label>
-                            <input type="text" class="form-control" id="phone" required>
+                            <input type="tel" class="form-control" id="phone" required pattern="^\d{10}$" title="Please enter a valid 10-digit phone number">
                         </div>
                         <div class="form-group">
-                            <label for="course">Select Course</label>
-                            <select class="form-control" id="course">
-                                <option>Course 1</option>
-                                <option>Course 2</option>
-                                <option>Course 3</option>
-                            </select>
+                            <label for="course">Course Name</label>
+                            <input type="text" class="form-control" id="course" required>
                         </div>
                         <div class="form-group">
                             <label for="start">Planning To Start Training</label>
-                            <select class="form-control" id="start">
-                                <option>Immediate</option>
-                                <option>Within a month</option>
-                                <option>Later</option>
+                            <select class="form-control" id="start" required>
+                                <option value="">Select an option</option>
+                                <option value="Immediate">Immediate</option>
+                                <option value="Within a month">Within a month</option>
+                                <option value="Later">Later</option>
                             </select>
                         </div>
                         <div class="form-group">
                             <label for="location">Location</label>
                             <input type="text" class="form-control" id="location">
                         </div>
-                        <div class="form-group">
+                        <div class="form-group" style="margin-bottom: 20px;">
                             <label for="message">Your Message</label>
-                            <textarea class="form-control" id="message" rows="3"></textarea>
+                            <textarea class="form-control" id="message" rows="3" minlength="10"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary btn-block">Book A Demo</button>
+                        <button type="submit" class="btn btn-primary btn-block" style="margin-bottom: 5px;">Book A Demo</button>
                     </form>
                 </div>
             </div>
@@ -544,19 +541,6 @@
     </div>
 </div>
 
-		
-
-
-    </div>
-</div>
-
-	
-
-
-
-
-	
-	</div>
 	</div>
 	<div class="container pt-45">
 
