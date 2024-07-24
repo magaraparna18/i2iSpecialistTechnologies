@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Roboto+Condensed:400,500,600,700');
-@charset "utf-8";
+
 /**
 *
 * -----------------------------------------------------------------------------
@@ -9009,79 +9009,6 @@ ul {
     -webkit-transform: rotate(-40deg);
   }
 }
-
-
-
-.box {
-  border: 2px solid #dcdcdc; /* Light border color */
-  border-radius: 10px;    /* Rounded corners */
-  padding: 60px;          /* Padding inside the box */
-  background: linear-gradient(135deg, #e0f7fa 50%, #ffffff 50%); /* Light blue gradient background */
-  max-width: 1070px;       /* Increased maximum width of the box */
-  margin: 0 auto;         /* Center the box horizontally */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
-  transition: box-shadow 0.3s ease, transform 0.2s ease, background 0.3s ease; /* Smooth transition for hover effects */
-}
-.box:hover {
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Less intense shadow on hover */
-  transform: translateY(-3px); /* Reduced lift effect on hover */
-  background: linear-gradient(135deg, #b3e5fc 50%, #e0f7fa 50%); /* Slightly different gradient on hover */
-}
-.box p {
-  margin: 0;              /* Remove default margin */
-  padding: 15px 0;       /* Spacing above and below paragraphs */
-}
-.box i {
-  color: #00796b;         /* Darker icon color */
-  transition: color 0.3s ease, transform 0.2s ease; /* Smooth transition for hover effect */
-}
-.box a:hover i {
-  color: #004d40;         /* Change icon color on hover */
-  transform: scale(1.05); /* Slightly increase icon size on hover */
-}
-.box a {
-  display: inline-block; /* Allows scaling effect */
-}
-
-
-.contact-container {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-}
-
-.contact-comment-section {
-  flex: 2;
-}
-
-.reasons-to-join {
-  flex: 1;
-}
-
-.reasons-to-join h3 {
-  margin-bottom: 10px;
-}
-
-.reasons-to-join ul {
-  list-style: none;
-  padding: 0;
-}
-
-.reasons-to-join ul li {
-  margin-bottom: 10px;
-  font-size: 16px;
-}
-
-.reasons-to-join ul li i {
-  color: green;
-  margin-right: 10px;
-}
-
-
-
-
-
-
 
 
 
