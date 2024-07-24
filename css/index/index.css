@@ -185,8 +185,29 @@
 
 
 /* Partner Section */
+
+
+
+/* Slide Track and Animation */
+.slide-track {
+    display: flex;
+    width: 100%;
+    gap: 3em;
+    animation: scroll 60s linear infinite; /* Animation applied to the whole track */
+    overflow: hidden;
+}
+
+
+
+/* Keyframes for Scrolling Animation */
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-1000%); } /* Adjust -1000% based on number of logos and gap */
+}
+
+/* Partner Section Styling */
 .partner-logo {
-    max-height: 80px; /* Default height for other logos */
+    max-height: 80px; /* Default height for logos */
     object-fit: contain;
     margin: 0 auto;
     padding: 10px 15px;
