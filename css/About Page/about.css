@@ -1,88 +1,24 @@
-/* A1 About section start  */
-.rs-history {
-    padding: 50px 0; /* Adjust as needed */
-   
+.team-item {
+    position: relative;
 }
-
-.rs-history .container {
-    display: flex;
-    flex-wrap: wrap;
+.team-img {
+    position: relative;
 }
-
-.rs-history .image-col {
-    flex: 1 1 30%; /* 40% width for image */
-    max-width: 35%;
-    margin-bottom: 20px; /* For mobile spacing */
-    
-}
-
-.rs-history .text-col {
-    flex: 1 1 70%; /* 60% width for text */
-    max-width: 80%;
-    padding-left: 50px; /* Adjust spacing between columns */
-}
-
-.rs-history img {
+.team-details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
     width: 100%;
-    height: auto;
-    padding-bottom: 40px;
-}
-
-.abt-title h2 {
-    font-size: 30px;
-    margin-bottom: 20px;
-}
-
-.about-desc p {
-    font-size: 16px;
-    line-height: 1.6;
-}
-.contact-info{
-    width: 300px;
-    margin-left: 80px;
-    font-size: 23px;
-}
-.about-desc{
-    text-align: justify;
-    margin-right: 35px;
-
-}
-.about-descc{
-    text-align: justify;
-    margin-right: 35px;
-}
-.abc{
-    font-size: 20px;
-}
-.vision-desc{
-    text-align: justify;
-    margin-right: 35px; 
-}
-
-
-/* placement Bar 100%  */
-.banner {
-    background: linear-gradient(to right, #969ea6, #78cbcb);
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
     color: white;
-    padding: 20px 0;
-    margin-left: 107px;
-    width: 1250px;
-    border: 2px solid #ffffff; /* Border color and width */
-    border-radius: 9px; /* Optional: adds rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Optional: adds shadow for depth */
-    transition: background 0.3s ease, border-color 0.3s ease; /* Smooth transition for hover effect */
+    text-align: center;
+    padding: 10px 0;
 }
-
-.banner:hover {
-    background: linear-gradient(to right, #00b3b3, #9eb2c5); /* Reverse the gradient or choose another color */
-    border-color: #00b3b3; /* Change border color on hover */
+.team-title {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
 }
-
-.banner h1 {
-    font-size: 3em;
-    margin-bottom: 15px;
-}
-
-.banner p {
-    font-size: 1.5em;
+.team-position {
+    font-size: 14px;
 }
