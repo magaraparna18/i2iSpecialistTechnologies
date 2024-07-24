@@ -1,144 +1,215 @@
 /* Container for the form and "WHY I2ISPECIALIST" section */
 .contact-container {
-    display: flex; /* Enable Flexbox */
-    justify-content: space-between; /* Space between items */
-    gap: 20px; /* Space between the cards */
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
-    margin: 0 auto; /* Center horizontally */
-  }
-  
-  /* Styling for contact card */
-  .contact-card {
-    flex: 1; /* Allow this card to take available space */
-    max-width: 100%; /* Adjust width as needed */
-    margin: 10px 0; /* Top and bottom margins */
-    border-radius: 10px; /* Rounded corners */
-    overflow: hidden; /* Hide any overflow */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
-    background: white; /* Card background */
-    padding: 10px; /* Add padding inside the card */
-  }
-  
-  /* Styling for the reasons-to-join card */
-  .card {
-    flex: 1; /* Allow this card to take available space */
-    max-width: 100%; /* Adjust width as needed */
-    margin: 20px 0; /* Top and bottom margins */
-    border-radius: 10px; /* Rounded corners */
-    overflow: hidden; /* Hide any overflow */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
-    background: white; /* Card background */
-  }
-  
-  /* Reasons to join section styling */
-  .reasons-to-join {
-    position: relative;
-    padding: 20px; /* Adjust padding as needed */
-    background: url('your-image-url.jpg') no-repeat center center;
-    background-size: cover;
-  }
-  
-  .reasons-to-join::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Adjust opacity here (0.5 for 50%) */
-    z-index: 1;
-  }
-  
-  .reasons-to-join h3, 
-  .reasons-to-join ul {
-    position: relative;
-    z-index: 2;
-    color: white; /* Adjust text color as needed for contrast */
-  }
-  
-  .reasons-to-join ul {
-    list-style: none; /* Remove default list styling */
-    padding: 0; /* Remove default padding */
-  }
-  
-  .reasons-to-join li {
-    margin-bottom: 10px; /* Space between list items */
-  }
-  
-  .reasons-to-join i {
-    margin-right: 10px; /* Space between icon and text */
-  }
-  
-  /* Form control styling */
-  .form-control {
-    border-radius: 5px; /* Rounded corners for inputs */
-    border: 1px solid #ddd; /* Border color */
-    padding: 10px; /* Padding inside inputs */
-  }
-  
-  /* Button styling */
-  .btn-send {
-    background-color: #007bff; /* Button background color */
-    color: white; /* Button text color */
-    border: none; /* Remove border */
-    border-radius: 5px; /* Rounded corners for button */
-    padding: 10px 20px; /* Padding inside button */
-    cursor: pointer; /* Pointer cursor on hover */
-  }
-  
-  .btn-send:hover {
-    background-color: #0056b3; /* Darker background on hover */
-  }
-  
-  /* Additional styling for the box class */
-  .box {
-    border: 2px solid #dcdcdc; /* Light border color */
-    border-radius: 10px; /* Rounded corners */
-    padding: 60px; /* Padding inside the box */
-    background: linear-gradient(135deg, #e0f7fa 50%, #ffffff 50%); /* Light blue gradient background */
-    max-width: 1070px; /* Increased maximum width of the box */
-    margin: 0 auto; /* Center the box horizontally */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
-    transition: box-shadow 0.3s ease, transform 0.2s ease, background 0.3s ease; /* Smooth transition for hover effects */
-  }
-  
-  .box:hover {
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Less intense shadow on hover */
-    transform: translateY(-3px); /* Reduced lift effect on hover */
-    background: linear-gradient(135deg, #b3e5fc 50%, #e0f7fa 50%); /* Slightly different gradient on hover */
-  }
-  
-  .box p {
-    margin: 0; /* Remove default margin */
-    padding: 15px 0; /* Spacing above and below paragraphs */
-  }
-  
-  .box i {
-    color: #00796b; /* Darker icon color */
-    transition: color 0.3s ease, transform 0.2s ease; /* Smooth transition for hover effect */
-  }
-  
-  .box a:hover i {
-    color: #004d40; /* Change icon color on hover */
-    transform: scale(1.05); /* Slightly increase icon size on hover */
-  }
-  
-  .box a {
-    display: inline-block; /* Allows scaling effect */
-  }
-  
-  
-  
+  display: flex; /* Enable Flexbox */
+  justify-content: space-between; /* Space between items */
+  gap: 20px; /* Space between the cards */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  margin: 0 auto; /* Center horizontally */
+ 
+}
+
+/* Styling for contact card */
+.contact-card {
+  flex: 1; /* Allow this card to take available space */
+  max-width: 100%; /* Adjust width as needed */
+  margin: 10px 0; /* Top and bottom margins */
+  border-radius: 10px; /* Rounded corners */
+  overflow: hidden; /* Hide any overflow */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  background: white; /* Card background */
+  padding: 10px; /* Add padding inside the card */
+}
+
+/* Styling for the reasons-to-join card */
+.card {
+  flex: 1; /* Allow this card to take available space */
+  max-width: 100%; /* Adjust width as needed */
+  margin: 20px 0; /* Top and bottom margins */
+  border-radius: 10px; /* Rounded corners */
+  overflow: hidden; /* Hide any overflow */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  background: white; /* Card background */
+}
+
+
+.reasons-to-join {
+  position: relative;
+   padding: 20px;   /* Adjust padding as needed */ 
+  background: url('your-image-url.jpg');/* no-repeat center center; */
+  background-size: cover;
+}
+
+
+
+
+.reasons-to-join::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Adjust opacity here (0.5 for 50%) */
+  z-index: 1;
+}
+
+.reasons-to-join h3, 
+.reasons-to-join ul {
+  position: relative;
+  z-index: 2;
+  color: white; /* Adjust text color as needed for contrast */
+}
+
+.reasons-to-join ul {
+  list-style: none; /* Remove default list styling */
+  padding: 0; /* Remove default padding */
+}
+
+.reasons-to-join li {
+  margin-bottom: 10px; /* Space between list items */
+}
+
+.reasons-to-join i {
+  margin-right: 10px; /* Space between icon and text */
+}
+
+/* Form control styling */
+.form-control {
+  border-radius: 5px; /* Rounded corners for inputs */
+  border: 1px solid #ddd; /* Border color */
+  padding: 10px; /* Padding inside inputs */
+}
+
+/* Button styling */
+.btn-send {
+  background-color: #007bff; /* Button background color */
+  color: white; /* Button text color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners for button */
+  padding: 10px 20px; /* Padding inside button */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.btn-send:hover {
+  background-color: #0056b3; /* Darker background on hover */
+}
+
+/* Additional styling for the box class */
+.box {
+  border: 2px solid #dcdcdc; /* Light border color */
+  border-radius: 10px; /* Rounded corners */
+  padding: 60px; /* Padding inside the box */
+  background: linear-gradient(135deg, #e0f7fa 50%, #ffffff 50%); /* Light blue gradient background */
+  max-width: 1070px; /* Increased maximum width of the box */
+  margin: 0 auto; /* Center the box horizontally */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+  transition: box-shadow 0.3s ease, transform 0.2s ease, background 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.box:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Less intense shadow on hover */
+  transform: translateY(-3px); /* Reduced lift effect on hover */
+  background: linear-gradient(135deg, #b3e5fc 50%, #e0f7fa 50%); /* Slightly different gradient on hover */
+}
+
+.box p {
+  margin: 0; /* Remove default margin */
+  padding: 15px 0; /* Spacing above and below paragraphs */
+}
+
+.box i {
+  color: #00796b; /* Darker icon color */
+  transition: color 0.3s ease, transform 0.2s ease; /* Smooth transition for hover effect */
+}
+
+.box a:hover i {
+  color: #004d40; /* Change icon color on hover */
+  transform: scale(1.05); /* Slightly increase icon size on hover */
+}
+
+.box a {
+  display: inline-block; /* Allows scaling effect */
+}
+
+
+
 /* map css    */
 
 .map-container {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0; /* Optional: adds vertical spacing */
+  display: flex;
+  justify-content: center;
+  margin: 20px 0; /* Optional: adds vertical spacing */
 }
 .map-container iframe {
-    border: 0;
-    max-width: 100%; /* Ensures the map is responsive */
-    width: 1300px;
-    height: 450px;
+  border: 0;
+  max-width: 99%; /* Ensures the map is responsive */
+  width: 1300px;
+  height: 450px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.box {
+  max-width: 93%;
+ 
+  margin: 0 auto;
+  padding: 98px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.box p {
+  margin: 0 0 10px;
+}
+.social-icons {
+  text-align: center;
+  margin-top: 20px;
+}
+.social-icons a {
+  margin: 0 15px;
+  font-size: 40px;
+  text-decoration: none;
+  color: inherit;
+}
+.availability {
+  text-align: center;
+  margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adjust the gap as needed */
+}
+
+.contact-container .contact-comment-section,
+.contact-container .reasons-to-join {
+  flex: 1 1 calc(50% - 20px); /* Adjust width based on gap */
+  box-sizing: border-box;
+  padding: 20px; /* Adjust padding as needed */
+  margin: 0;
+}
+
+.contact-container .contact-comment-section {
+  margin-right: 20px; /* Space between cards, adjust as needed */
+}
+
+.contact-container .reasons-to-join {
+  margin-left: 20px; /* Space between cards, adjust as needed */
 }
