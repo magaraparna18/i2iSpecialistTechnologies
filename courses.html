@@ -50,7 +50,7 @@
         <![endif]-->
 
 	<!-- Courses CSS File -->
-	<link rel="stylesheet" href="css/courses.css">
+	<link rel="stylesheet" href="css/CoursesPage/courses.css">
 
 
 
@@ -67,37 +67,39 @@
 			<div class="col-md-12 text-center offer-ad"
 				style="background-color: #226eb6; padding: 30px; border-radius: 15px; color: white; box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);">
 				<h2 style="color: #fd580c; font-size: 32px; margin-bottom: 20px;">Limited Time Offer!</h2>
-				<p style="font-size: 20px; color: white;">Originally priced at <s style="font-size: 20px;color:#0e0a08">₹5000</s> each, join now for only
-					<u><b style="font-size: 24px; color: #070606;">₹2500</b></u> each!</p>
+				<p style="font-size: 20px; color: white;">Originally priced at <s
+						style="font-size: 20px;color:#0e0a08">₹5000</s> each, join now for only
+					<u><b style="font-size: 24px; color: #070606;">₹2500</b></u> each!
+				</p>
 				<div id="countdown" style="font-size: 24px; margin-top: 20px; color: #FF4500;"></div>
 				<div id="counter" style="font-size: 20px; color: white; margin-top: 10px;"></div>
 			</div>
-	
+
 			<script>
 				// Set the date we're counting down to (4 days from now)
 				var countDownDate = new Date().getTime() + 4 * 24 * 60 * 60 * 1000;
-	
+
 				// Update the count down every 1 second
 				var countdownfunction = setInterval(function () {
 					// Get today's date and time
 					var now = new Date().getTime();
-	
+
 					// Find the distance between now and the count down date
 					var distance = countDownDate - now;
-	
+
 					// Time calculations for days, hours, minutes and seconds
 					var days = Math.floor(distance / (1000 * 60 * 60 * 24));
 					var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
 					var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 					var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-	
+
 					// Display the result in the element with id="countdown"
 					document.getElementById("countdown").innerHTML = days + " Days are Left ";
-	
+
 					// Display the result in the element with id="counter"
 					document.getElementById("counter").innerHTML = hours + "h " +
 						minutes + "m " + seconds + "s ";
-	
+
 					// If the count down is over, write some text 
 					if (distance < 0) {
 						clearInterval(countdownfunction);
@@ -108,121 +110,123 @@
 			</script>
 		</ul>
 	</div>
-	
-	
+
+
 
 	<!-- Offer Content End -->
-	
 
-<!-- Header Start -->
-<header id="rs-header" class="rs-header mt-0" >
-	<!-- Menu Start -->
-	<div class="menu-area menu-sticky">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12 d-flex justify-content-between align-items-center">
-					<div id="logo-sticky" class="mr-3">
-						<a href="index.html">
-							<img src="images/i2iLogo.png" alt="logo" class="img-fluid">
-						</a>
+
+	<!-- Header Start -->
+	<div class="full-width-header" style="margin-top:10px;">
+		
+		<header id="rs-header" class="rs-header menu-black">
+			<!-- Menu Start -->
+			<div class="menu-area menu-sticky" style="background-color: rgb(233, 231, 231);">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 d-flex justify-content-between align-items-center" >
+							<div id="logo-sticky" class="mr-3" >
+								
+									<img src="images/i2iLogo1.png" alt="logo" class="img-fluid">
+								
+							</div>
+							<a class="rs-menu-toggle d-lg-none">
+								<i class="fa fa-bars"></i> Menu
+							</a>
+							<nav class="rs-menu d-none d-lg-block" >
+								<ul class="nav-menu list-unstyled mb-0 d-flex" >
+									<!-- Home -->
+									<li class="current-menu-item current_page_item menu-item-has-children mr-3" >
+										<a href="index4.html" class="home" style="color: black">Home</a>
+									</li>
+									<!-- End Home -->
+
+									<!-- About Menu Start -->
+									<li class="menu-item-has-children mr-3">
+										<a href="about.html"style="color: black"style="color: black">AboutUs</a>
+									</li>
+									<!-- About Menu End -->
+
+									<!-- Courses Menu Start -->
+									<li class="menu-item-has-children mr-3">
+										<a href="courses.html" style="color: black">Courses</a>
+										<ul class="sub-menu list-unstyled">
+											<li class="menu-item-has-children">
+												<a href="trendingcourses.html" >Trending Courses</a>
+
+											</li>
+											<li class="menu-item-has-children">
+												<a href="fullstackdevelopment.html" >Full Stack Development</a>
+
+											</li>
+											<li class="menu-item-has-children">
+												<a href="#">Data Science</a>
+
+											</li>
+											<li class="menu-item-has-children">
+												<a href="#">Data Analytics</a>
+
+											</li>
+											<li class="menu-item-has-children">
+												<a href="#">Software Testing</a>
+
+											</li>
+											<li class="menu-item-has-children">
+												<a href="#">Digital Marketing</a>
+
+											</li>
+										</ul>
+									</li>
+									<!-- Courses Menu End -->
+
+									<!-- Blogs Menu Start -->
+									<li class="menu-item-has-children mr-3">
+										<a href="blog.html"style="color: black">Blogs</a>
+									</li>
+									<!-- Blogs Menu End -->
+
+									<!-- Placement Menu Start -->
+									<li class="menu-item-has-children mr-3">
+										<a href="placement.html"style="color: black">Placement</a>
+									</li>
+									<!-- Placement Menu End -->
+
+									<!-- Job Opening Menu Start -->
+									<li class="menu-item-has-children mr-3">
+										<a href="jobopening.html"style="color: black">JobOpening</a>
+									</li>
+									<!-- Job Opening Menu End -->
+
+									<!-- FAQ Menu Start -->
+									<li class="menu-item-has-children mr-3">
+										<a href="faq.html" style="color: black">FAQ</a>
+									</li>
+									<!-- FAQ Menu End -->
+
+									<!-- Contact Menu Start -->
+									<li class="mr-3"><a href="contact.html" style="color: black">ContactUs</a></li>
+									<!-- Contact Menu End -->
+
+									<!-- Login Menu Start -->
+									<li><a href="contact.html"style="color: black">Login/Register</a></li>
+									<!-- Login Menu End -->
+								</ul>
+							</nav>
+						</div>
 					</div>
-					<a class="rs-menu-toggle d-lg-none">
-						<i class="fa fa-bars"></i>Menu
-					</a>
-					<nav class="rs-menu d-none d-lg-block">
-						<ul class="nav-menu list-unstyled mb-0 d-flex">
-							<!-- Home -->
-							<li class="current-menu-item current_page_item menu-item-has-children mr-3">
-								<a href="index4.html" class="home">Home</a>
-							</li>
-							<!-- End Home -->
-
-							<!-- About Menu Start -->
-							<li class="menu-item-has-children mr-3">
-								<a href="about.html">About Us</a>
-								
-							</li>
-							<!-- About Menu End -->
-
-							<!-- Courses Menu Start -->
-<li class="menu-item-has-children mr-3">
-<a href="courses.html">Courses</a>
-<ul class="sub-menu list-unstyled">
-<li class="menu-item-has-children">
-<a href="#">Full Stack Development</a>
-<ul class="sub-menu list-unstyled">
-	<li><a href="#">Course Overview</a></li>
-	<li><a href="#">Syllabus</a></li>
-	<li><a href="#">Reviews</a></li>
-</ul>
-</li>
-<li class="menu-item-has-children">
-<a href="#">Data Science</a>
-<ul class="sub-menu list-unstyled">
-	<li><a href="#">Course Overview</a></li>
-	<li><a href="#">Syllabus</a></li>
-	<li><a href="#">Reviews</a></li>
-</ul>
-</li>
-<li class="menu-item-has-children">
-<a href="#">Data Analytics</a>
-<ul class="sub-menu list-unstyled">
-	<li><a href="#">Course Overview</a></li>
-	<li><a href="#">Syllabus</a></li>
-	<li><a href="#">Reviews</a></li>
-</ul>
-</li>
-<li class="menu-item-has-children">
-<a href="#">Software Testing</a>
-<ul class="sub-menu list-unstyled">
-	<li><a href="#">Course Overview</a></li>
-	<li><a href="#">Syllabus</a></li>
-	<li><a href="#">Reviews</a></li>
-</ul>
-</li>
-<li class="menu-item-has-children">
-<a href="#">Digital Marketing</a>
-<ul class="sub-menu list-unstyled">
-	<li><a href="#">Course Overview</a></li>
-	<li><a href="#">Syllabus</a></li>
-	<li><a href="#">Reviews</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<!-- Courses Menu End -->
-
-
-							<!-- Blogs Menu Start -->
-							<li class="menu-item-has-children mr-3">
-								<a href="#">Blogs</a>
-								
-							</li>
-							<!-- Blogs Menu End -->
-							 <!-- FAQ Menu Start -->
-							<li class="menu-item-has-children mr-3">
-								<a href="#">FAQ</a>
-								
-							</li>
-							<!-- FAQ Menu End -->
-
-							<!-- Contact Menu Start -->
-							<li class="mr-3"><a href="contact.html">Contact Us</a></li>
-							<!-- Contact Menu End -->
-
-							<!-- Login Menu Start -->
-							<li><a href="contact.html">Login/Register</a></li>
-							<!-- Login Menu End -->
-						</ul>
-					</nav>
 				</div>
 			</div>
-		</div>
-	</div>
-	<!-- Menu End -->
-</header>
+			<!-- Menu End -->
+		</header>
 
-<!-- Header End -->
+		<!-- Header End -->
+
+	</div>
+
+	</div>
+	<!-- Full width header End -->
+
+	<!-- Header End -->
 
 
 	<!-------------------------Courses Start ----------------------->
@@ -242,226 +246,333 @@
 			</div>
 
 			<div class="row grid">
+
+				<!-- Offer Course 1 Start -->
 				<div class="col-lg-4 col-md-6 grid-item filter1">
 					<div class="course-item">
 						<div class="course-img">
-							<img src="images/courses/10.jpg" alt="" />
-							<span class="course-value">$2500</span>
+							<img src="images/courses/10.jpg" alt="Front End Development" />
+
+
 							<div class="course-toolbar">
-								<h4 class="course-category"><a href="#">Front End Developer</a></h4>
-								<div class="course-date">
-									<i class="fa fa-calendar"></i> 28-06-2024
-								</div>
-								<div class="course-duration">
-									<i class="fa fa-clock-o"></i> 6 Months
+								<h4 class="course-category">Front End Developer</h4>
+
+								<div class="course-duration" style="color: rgb(161, 42, 42);">
+									<i class="fa fa-clock-o"></i> 6 Months Course
 								</div>
 							</div>
 						</div>
 						<div class="course-body">
 							<div class="course-desc">
-								<h4 class="course-title"><a href="courses-details.html">Diploma Computer </a></h4>
-								<p>
-									Cras ultricies lacus consectetur, consectetur scelerisque arcu.Curabitur Aenean
-									egestas
-									a
-									Nullam augue augue.
-								</p>
+								<h4 class="course-title">Advanced Front End Development</h4>
+								<ul>
+									<li><strong>Course Overview:</strong> Dive into the dynamic world of web development
+										with our comprehensive Diploma in Front End Development.</li>
+									<li><strong>Skills Acquired:</strong> Master the art of creating visually stunning
+										and highly interactive user interfaces.</li>
+									<li><strong>Technologies Covered:</strong> HTML5, CSS3, JavaScript, and popular
+										frameworks like Bootstrap and React.js.</li>
+									<li><strong>Course Outcome:</strong> Build modern, responsive websites and web
+										applications that stand out in today's competitive market.</li>
+									<li><strong>Projects:</strong> Work on 5 real-world projects that will enhance your
+										portfolio and practical experience.</li>
+									<li><strong>Internship:</strong> Receive preparation and support for securing an
+										internship to gain hands-on industry experience.</li>
+									<li><strong>Professional Certification:</strong> Receive a professional
+										certification upon successful completion of the course.</li>
+									<li><strong>Experienced Instructors:</strong> Learn from industry professionals with
+										years of experience in mobile app development.</li>
+									<li><strong>Career Guidance:</strong> Get access to career counseling and job
+										placement assistance.</li>
+								</ul>
 							</div>
 						</div>
 						<div class="course-footer">
 							<div class="course-seats">
-								<i class="fa fa-users"></i> Only 10 SEATS are Left
+								<i class="fa fa-users"></i> Only 10 SEATS Left
 							</div>
 							<div class="course-button">
-								<a href="#">APPLY NOW</a>
-								<!-- Add a another page to redirect and discribe overall format of that course -->
+								<a href="course-details.html">APPLY NOW</a>
+								<!-- Add another page to redirect and describe the overall format of the course -->
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-4 col-md-6 grid-item filter2">
-					<div class="course-item">
-						<div class="course-img">
-							<img src="images/courses/11.jpg" alt="" />
-							<span class="course-value">$2500</span>
-							<div class="course-toolbar">
-								<h4 class="course-category"><a href="#">Back End Developer</a></h4>
-								<div class="course-date">
-									<i class="fa fa-calendar"></i> 28-06-2025
-								</div>
-								<div class="course-duration">
-									<i class="fa fa-clock-o"></i> 6 Month
-								</div>
-							</div>
-						</div>
-						<div class="course-body">
-							<div class="course-desc">
-								<h3 class="course-title"><a href="courses-details.html">Computer Engineering</a></h3>
-								<p>
-									Cras ultricies lacus consectetur, consectetur scelerisque arcu.Curabitur Aenean
-									egestas
-									a
-									Nullam augue augue.
-								</p>
-							</div>
-						</div>
-						<div class="course-footer">
-							<div class="course-seats">
-								<i class="fa fa-users"></i> Only 9 SEATS are Left
-							</div>
-							<div class="course-button">
-								<a href="#">APPLY NOW</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 grid-item filter4">
-					<div class="course-item">
-						<div class="course-img">
-							<img src="images/courses/12.jpg" alt="" />
-							<span class="course-value">$2500</span>
-							<div class="course-toolbar">
-								<h4 class="course-category"><a href="#">Mysql Database</a></h4>
-								<div class="course-date">
-									<i class="fa fa-calendar"></i> 28-10-2025
-								</div>
-								<div class="course-duration">
-									<i class="fa fa-clock-o"></i> 4 year
-								</div>
-							</div>
-						</div>
-						<div class="course-body">
-							<div class="course-desc">
-								<h3 class="course-title"><a href="courses-details.html">Computer Engineering</a></h3>
-								<p>
-									Cras ultricies lacus consectetur, consectetur scelerisque arcu.Curabitur Aenean
-									egestas
-									a
-									Nullam augue augue.
-								</p>
-							</div>
-						</div>
-						<div class="course-footer">
-							<div class="course-seats">
-								<i class="fa fa-users"></i> 70 SEATS
-							</div>
-							<div class="course-button">
-								<a href="#">APPLY NOW</a>
-							</div>
-						</div>
-					</div>
-				</div>
+
+				<!-- Offer Course 1 End -->
+
+
+				<!-- Offer Course 2  -->
 				<div class="col-lg-4 col-md-6 grid-item filter1">
 					<div class="course-item">
 						<div class="course-img">
-							<img src="images/courses/13.jpg" alt="" />
-							<span class="course-value">$450</span>
+							<img src="images/courses/10.jpg" alt="Beginner Back End Development" />
+
 							<div class="course-toolbar">
-								<h4 class="course-category"><a href="courses-details.html">Science</a></h4>
-								<div class="course-date">
-									<i class="fa fa-calendar"></i> 28-06-2017
-								</div>
-								<div class="course-duration">
-									<i class="fa fa-clock-o"></i> 4 year
+								<h4 class="course-category">Back End Developer</h4>
+
+								<div class="course-duration" style="color: rgb(161, 42, 42);"">
+									<i class=" fa fa-clock-o"></i> 3 Months Course
 								</div>
 							</div>
 						</div>
 						<div class="course-body">
 							<div class="course-desc">
-								<h4 class="course-title"><a href="courses-details.html">Civil Engineering</a></h4>
-								<p>
-									Cras ultricies lacus consectetur, consectetur scelerisque arcu.Curabitur Aenean
-									egestas
-									a
-									Nullam augue augue.
-								</p>
+								<h4 class="course-title">Beginner Back End Development</h4>
+								<ul>
+									<li><strong>Course Overview:</strong> Introduction to server-side development with a
+										focus on fundamental concepts and basic skills.</li>
+									<li><strong>Skills Acquired:</strong> Learn the basics of server-side languages and
+										simple database interactions.</li>
+									<li><strong>Technologies Covered:</strong> Introduction to Java and basic SQL.</li>
+									<li><strong>Course Outcome:</strong> Develop a basic understanding of back-end
+										development and build simple server-side applications.</li>
+									<li><strong>Projects:</strong> Complete 3 introductory projects to apply fundamental
+										concepts.</li>
+									<li><strong>Internship:</strong> Guidance on starting a career and securing
+										entry-level positions.</li>
+									<li><strong>Professional Certification:</strong> Receive a professional
+										certification upon successful completion of the course.</li>
+									<li><strong>Experienced Instructors:</strong> Learn from industry professionals with
+										years of experience in mobile app development.</li>
+									<li><strong>Career Guidance:</strong> Get access to career counseling and job
+										placement assistance.</li>
+								</ul>
 							</div>
 						</div>
 						<div class="course-footer">
 							<div class="course-seats">
-								<i class="fa fa-users"></i> 70 SEATS
+								<i class="fa fa-users"></i> Only 15 SEATS Left
 							</div>
 							<div class="course-button">
-								<a href="#">APPLY NOW</a>
+								<a href="course-details-beginner.html">APPLY NOW</a>
+								<!-- Add another page to redirect and describe the overall format of the course -->
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Offer Course 2 End -->
+
+				<!-- Offer Course 3 Start -->
+
+				<div class="col-lg-4 col-md-6 grid-item filter1">
+					<div class="course-item">
+						<div class="course-img">
+							<img src="images/courses/10.jpg" alt="Mobile App Development Course" />
+							<div class="course-toolbar">
+								<h4 class="course-category">Mobile App Development</h4>
+								<div class="course-duration" style="color: rgb(161, 42, 42);">
+									<i class="fa fa-clock-o"></i> 6 Months Course
+								</div>
+							</div>
+						</div>
+						<div class="course-body">
+							<div class="course-desc">
+								<h4 class="course-title">Mobile App Development</h4>
+								<ul>
+									<li><strong>Course Overview:</strong> Learn the essential skills to build native and
+										cross-platform mobile applications from scratch.</li>
+									<li><strong>Skills Acquired:</strong> Design and develop mobile apps, understand
+										UI/UX principles, and deploy apps on various platforms.</li>
+									<li><strong>Technologies Covered:</strong> Java, Kotlin, Swift, React Native,
+										Flutter, Firebase, and REST APIs.</li>
+									<li><strong>Course Outcome:</strong> Gain the ability to develop fully functional
+										mobile applications for Android and iOS platforms.</li>
+									<li><strong>Projects:</strong> Work on 5 practical projects, including a chat
+										application, a mobile game, and an e-commerce app.</li>
+									<li><strong>Internship:</strong> Support for securing internships or entry-level
+										positions in mobile app development.</li>
+									<li><strong>Professional Certification:</strong> Receive a professional
+										certification upon successful completion of the course.</li>
+									<li><strong>Experienced Instructors:</strong> Learn from industry professionals with
+										years of experience in mobile app development.</li>
+									<li><strong>Career Guidance:</strong> Get access to career counseling and job
+										placement assistance.</li>
+									<li><strong>Professional Certification:</strong> Receive a professional
+										certification upon successful completion of the course.</li>
+									<li><strong>Experienced Instructors:</strong> Learn from industry professionals with
+										years of experience in mobile app development.</li>
+									<li><strong>Career Guidance:</strong> Get access to career counseling and job
+										placement assistance.</li>
+								</ul>
+							</div>
+						</div>
+						<div class="course-footer">
+							<div class="course-seats">
+								<i class="fa fa-users"></i> Only 20 SEATS Left
+							</div>
+							<div class="course-button">
+								<a href="course-details-mobileapp.html" class="btn btn-primary">APPLY NOW</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Offer Course 3 End  -->
+
+
+				<!-- Offer Course 4 Start -->
+				<div class="col-lg-4 col-md-6 grid-item filter1">
+					<div class="course-item">
+						<div class="course-img">
+							<img src="images/courses/10.jpg" alt="Intermediate Data Science" />
+
+							<div class="course-toolbar">
+								<h4 class="course-category">Data Science</h4>
+
+								<div class="course-duration" style="color: rgb(161, 42, 42);">
+									<i class="fa fa-clock-o"></i> 6 Months Course
+								</div>
+							</div>
+						</div>
+						<div class="course-body">
+							<div class="course-desc">
+								<h4 class="course-title">Intermediate Data Science</h4>
+								<ul>
+									<li><strong>Course Overview:</strong> Deepen your knowledge in data science with
+										advanced techniques and methodologies. This course builds on foundational skills
+										to tackle complex data challenges.</li>
+									<li><strong>Skills Acquired:</strong> Proficient in data analysis, statistical
+										modeling, and machine learning algorithms.</li>
+									<li><strong>Technologies Covered:</strong> Advanced Python, R, SQL, and data
+										visualization tools.</li>
+									<li><strong>Course Outcome:</strong> Ability to analyze large datasets, create
+										predictive models, and generate actionable insights.</li>
+									<li><strong>Projects:</strong> Work on 5 advanced projects to enhance your portfolio
+										and practical experience.</li>
+									<li><strong>Internship:</strong> Support and preparation for securing internships in
+										data science roles.</li>
+									<li><strong>Professional Certification:</strong> Receive a professional
+										certification upon successful completion of the course.</li>
+									<li><strong>Experienced Instructors:</strong> Learn from industry professionals with
+										years of experience in mobile app development.</li>
+									<li><strong>Career Guidance:</strong> Get access to career counseling and job
+										placement assistance.</li>
+								</ul>
+							</div>
+						</div>
+						<div class="course-footer">
+							<div class="course-seats">
+								<i class="fa fa-users"></i> Only 20 SEATS Left
+							</div>
+							<div class="course-button">
+								<a href="course-details-intermediate.html">APPLY NOW</a>
+								<!-- Add another page to redirect and describe the overall format of the course -->
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Offer Course 4 End -->
+
+
+				<!-- Offer Course 5 Start -->
+				<div class="col-lg-4 col-md-6 grid-item filter1">
+					<div class="course-item">
+						<div class="course-img">
+							<img src="images/courses/10.jpg" alt="Digital Marketing" />
+
+							<div class="course-toolbar">
+								<h4 class="course-category">Digital Marketing</h4>
+
+								<div class="course-duration" style="color: rgb(161, 42, 42);">
+									<i class="fa fa-clock-o"></i> 4 Months Course
+								</div>
+							</div>
+						</div>
+						<div class="course-body">
+							<div class="course-desc">
+								<h4 class="course-title">Digital Marketing Mastery</h4>
+								<ul>
+									<li><strong>Course Overview:</strong> Explore the world of digital marketing with a
+										comprehensive course covering essential strategies and tools to drive online
+										success.</li>
+									<li><strong>Skills Acquired:</strong> Master techniques in SEO, SEM, social media
+										marketing, email campaigns, and data analytics.</li>
+									<li><strong>Technologies Covered:</strong> Google Analytics, Google Ads, Facebook
+										Ads, email marketing platforms, and content management systems.</li>
+									<li><strong>Course Outcome:</strong> Ability to develop and execute effective
+										digital marketing strategies to increase brand visibility and engagement.</li>
+									<li><strong>Projects:</strong> Complete 4 real-world projects to apply digital
+										marketing techniques and build a strong portfolio.</li>
+									<li><strong>Internship:</strong> Assistance and preparation for securing internships
+										in digital marketing roles.</li>
+									<li><strong>Professional Certification:</strong> Receive a professional
+										certification upon successful completion of the course.</li>
+									<li><strong>Experienced Instructors:</strong> Learn from industry professionals with
+										years of experience in mobile app development.</li>
+									<li><strong>Career Guidance:</strong> Get access to career counseling and job
+										placement assistance.</li>
+								</ul>
+							</div>
+						</div>
+						<div class="course-footer">
+							<div class="course-seats">
+								<i class="fa fa-users"></i> Only 25 SEATS Left
+							</div>
+							<div class="course-button">
+								<a href="course-details-digital-marketing.html">APPLY NOW</a>
+								<!-- Add another page to redirect and describe the overall format of the course -->
 							</div>
 						</div>
 					</div>
 				</div>
 
 
+				<!-- Offer Course 5 End -->
 
-				<div class="col-lg-4 col-md-6 grid-item filter3 filter4">
-					<div class="course-item">
-						<div class="course-img">
-							<img src="images/courses/17.jpg" alt="" />
-							<span class="course-value">$450</span>
-							<div class="course-toolbar">
-								<h4 class="course-category"><a href="courses-details.html">Humanities</a></h4>
-								<div class="course-date">
-									<i class="fa fa-calendar"></i> 28-06-2017
-								</div>
-								<div class="course-duration">
-									<i class="fa fa-clock-o"></i> 4 year
-								</div>
-							</div>
-						</div>
-						<div class="course-body">
-							<div class="course-desc">
-								<h4 class="course-title"><a href="#">Master of Arts</a></h4>
-								<p>
-									Cras ultricies lacus consectetur, consectetur scelerisque arcu.Curabitur Aenean
-									egestas
-									a
-									Nullam augue augue.
-								</p>
-							</div>
-						</div>
-						<div class="course-footer">
-							<div class="course-seats">
-								<i class="fa fa-users"></i> 70 SEATS
-							</div>
-							<div class="course-button">
-								<a href="#">APPLY NOW</a>
-							</div>
-						</div>
-					</div>
-				</div>
 				<div class="col-lg-4 col-md-6 grid-item filter1">
 					<div class="course-item">
 						<div class="course-img">
-							<img src="images/courses/18.jpg" alt="" />
-							<span class="course-value">$425</span>
+							<img src="images/courses/10.jpg" alt="Software Testing" />
+
 							<div class="course-toolbar">
-								<h4 class="course-category"><a href="#">Science</a></h4>
-								<div class="course-date">
-									<i class="fa fa-calendar"></i> 28-06-2017
-								</div>
-								<div class="course-duration">
-									<i class="fa fa-clock-o"></i> 4 year
+								<h4 class="course-category">Software Testing</h4>
+
+								<div class="course-duration" style="color: rgb(161, 42, 42);">
+									<i class="fa fa-clock-o"></i> 3 Months Course
 								</div>
 							</div>
 						</div>
 						<div class="course-body">
 							<div class="course-desc">
-								<h3 class="course-title"><a href="courses-details.html">Electronics Engineering</a></h3>
-								<p>
-									Cras ultricies lacus consectetur, consectetur scelerisque arcu.Curabitur Aenean
-									egestas
-									a
-									Nullam augue augue.
-								</p>
+								<h4 class="course-title">Software Testing Fundamentals</h4>
+								<ul>
+									<li><strong>Course Overview:</strong> Gain a solid foundation in software testing
+										with this course, focusing on testing principles, methodologies, and best
+										practices.</li>
+									<li><strong>Skills Acquired:</strong> Learn to design test cases, execute test
+										plans, and identify and report software defects.</li>
+									<li><strong>Technologies Covered:</strong> Testing tools like Selenium, JIRA, and
+										basic understanding of automated testing.</li>
+									<li><strong>Course Outcome:</strong> Ability to ensure software quality through
+										effective testing techniques and contribute to successful project delivery.</li>
+									<li><strong>Projects:</strong> Work on 3 practical projects to apply testing
+										concepts and tools in real-world scenarios.</li>
+									<li><strong>Internship:</strong> Support and preparation for securing internships in
+										software testing roles.</li>
+									<li><strong>Professional Certification:</strong> Receive a professional
+										certification upon successful completion of the course.</li>
+									<li><strong>Experienced Instructors:</strong> Learn from industry professionals with
+										years of experience in mobile app development.</li>
+									<li><strong>Career Guidance:</strong> Get access to career counseling and job
+										placement assistance.</li>
+								</ul>
 							</div>
 						</div>
 						<div class="course-footer">
 							<div class="course-seats">
-								<i class="fa fa-users"></i> 70 SEATS
+								<i class="fa fa-users"></i> Only 20 SEATS Left
 							</div>
 							<div class="course-button">
-								<a href="#">APPLY NOW</a>
+								<a href="course-details-software-testing.html">APPLY NOW</a>
+								<!-- Add another page to redirect and describe the overall format of the course -->
 							</div>
 						</div>
 					</div>
 				</div>
+
 			</div>
 
 		</div>
@@ -469,82 +580,90 @@
 	<!-- Courses End -->
 
 	<!-- Courses Features -->
-	
+	<div>
+		<div class="slider-container">
 
-<div >
-    <div class="slider-container">
+			<!-- cards 2 cards 2 cards 2  -->
+			<div class="container">
+				<div class="row">
+					<!-- Course Features Section -->
+					<div class="col-md-12 col-lg-6">
+						<div class="sidebar-area">
+							<div class="card course-features-info">
+								<h4 class="desc-title" style="text-align:center">Course Features</h4>
+								<ul>
+									<li><i class="fa fa-files-o"></i> <span class="label">Lectures</span> <span
+											class="value">9</span></li>
+									<li><i class="fa fa-clock-o"></i> <span class="label">Duration</span> <span
+											class="value">As Per Selected Course hours</span></li>
+									<li><i class="fa fa-level-up"></i> <span class="label">Skill level</span> <span
+											class="value">All levels</span></li>
+									<li><i class="fa fa-language"></i> <span class="label">Language</span> <span
+											class="value">English</span></li>
+									<li><i class="fa fa-users"></i> <span class="label">Students</span> <span
+											class="value">560</span></li>
+									<li><i class="fa fa-check-square-o"></i> <span class="label">Assessments</span>
+										<span class="value">Yes</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
 
-<!-- cards 2 cards 2 cards 2  -->
-<div class="container">
-    <div class="row">
-        <!-- Course Features Section -->
-        <div class="col-md-12 col-lg-6">
-            <div class="sidebar-area">
-                <div class="card course-features-info">
-                    <h4 class="desc-title" style="text-align:center">Course Features</h4>
-                    <ul>
-                        <li><i class="fa fa-files-o"></i> <span class="label">Lectures</span> <span class="value">9</span></li>
-                        <li><i class="fa fa-clock-o"></i> <span class="label">Duration</span> <span class="value">As Per Selected Course hours</span></li>
-                        <li><i class="fa fa-level-up"></i> <span class="label">Skill level</span> <span class="value">All levels</span></li>
-                        <li><i class="fa fa-language"></i> <span class="label">Language</span> <span class="value">English</span></li>
-                        <li><i class="fa fa-users"></i> <span class="label">Students</span> <span class="value">560</span></li>
-                        <li><i class="fa fa-check-square-o"></i> <span class="label">Assessments</span> <span class="value">Yes</span></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+					<!-- Contact Form Section -->
+					<div class="col-md-12 col-lg-6">
+						<div class="sidebar-area">
+							<div class="card contact-form">
+								<h4 class="desc-title" style="color:red; margin-top:10px; text-align:center; margin-bottom:1px;">Get Course
+									Fees & Discount</h4>
+								<form id="contactForm">
+									<div class="form-group">
+										<label for="name">Your Name*</label>
+										<input type="text" class="form-control" id="name" required minlength="2">
+									</div>
+									<div class="form-group">
+										<label for="email">Your Email ID</label>
+										<input type="email" class="form-control" id="email" required>
+									</div>
+									<div class="form-group">
+										<label for="phone">Phone Number*</label>
+										<input type="tel" class="form-control" id="phone" required pattern="^\d{10}$"
+											title="Please enter a valid 10-digit phone number">
+									</div>
+									<div class="form-group">
+										<label for="course">Course Name</label>
+										<input type="text" class="form-control" id="course" required>
+									</div>
+									<div class="form-group">
+										<label for="start">Planning To Start Training</label>
+										<select class="form-control" id="start" required>
+											<option value="">Select an option</option>
+											<option value="Immediate">Immediate</option>
+											<option value="Within a month">Within a month</option>
+											<option value="Later">Later</option>
+										</select>
+									</div>
+									<div class="form-group">
+										<label for="location">Location</label>
+										<input type="text" class="form-control" id="location">
+									</div>
+									<div class="form-group" style="margin-bottom: 20px;">
+										<label for="message">Your Message</label>
+										<textarea class="form-control" id="message" rows="3" minlength="10"></textarea>
+									</div>
+									<button type="submit" class="btn btn-primary btn-block"
+										style="margin-bottom: 5px;">Book A Demo</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
-        <!-- Contact Form Section -->
-        <div class="col-md-12 col-lg-6">
-            <div class="sidebar-area">
-                <div class="card contact-form">
-                    <h4 class="desc-title" style="color:red; margin-top:10px; text-align:center;">Get Course Fees & Discount</h4>
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Your Name*</label>
-                            <input type="text" class="form-control" id="name" required minlength="2">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Your Email ID</label>
-                            <input type="email" class="form-control" id="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Phone Number*</label>
-                            <input type="tel" class="form-control" id="phone" required pattern="^\d{10}$" title="Please enter a valid 10-digit phone number">
-                        </div>
-                        <div class="form-group">
-                            <label for="course">Course Name</label>
-                            <input type="text" class="form-control" id="course" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="start">Planning To Start Training</label>
-                            <select class="form-control" id="start" required>
-                                <option value="">Select an option</option>
-                                <option value="Immediate">Immediate</option>
-                                <option value="Within a month">Within a month</option>
-                                <option value="Later">Later</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="location">Location</label>
-                            <input type="text" class="form-control" id="location">
-                        </div>
-                        <div class="form-group" style="margin-bottom: 20px;">
-                            <label for="message">Your Message</label>
-                            <textarea class="form-control" id="message" rows="3" minlength="10"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-block" style="margin-bottom: 5px;">Book A Demo</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+		</div>
+		<div class="container pt-45">
 
-	</div>
-	<div class="container pt-45">
-
-	</div>
+		</div>
 	</div>
 	<!-- Courses Details End -->
 
@@ -722,7 +841,7 @@
 
 <!-- Mirrored from keenitsolutions.com/products/html/edulearn/edulearn-demo/courses-details2.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 15 Jul 2024 09:49:38 GMT -->
 
- <!-- Link to your external JavaScript file -->
-    <script src="coursespage1.js"></script>
+<!-- Link to your external JavaScript file -->
+<script src="coursespage1.js"></script>
 
 </html>
