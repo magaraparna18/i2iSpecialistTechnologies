@@ -706,15 +706,7 @@ ul {
   margin-bottom: 15px;
   text-transform: uppercase;
 }
-.sec-title:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 3px;
-  width: 100px;
-  background: #ff3115;
-}
+
 .sec-title.text-center:after {
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -6561,15 +6553,7 @@ ul {
   text-transform: uppercase;
   position: relative;
 }
-.abt-title h2:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 5px;
-  width: 100px;
-  background-color: #ff3115;
-}
+
 .abt-title.text-center h2:after {
   left: 50%;
   transform: translateX(-50%);
