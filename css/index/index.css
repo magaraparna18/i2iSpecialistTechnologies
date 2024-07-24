@@ -205,3 +205,166 @@
     justify-content: center;
     align-items: center;
 }
+
+/* Placement bar */
+
+/* General styling for the placement bar */
+.banner {
+    background-color: #f8f9fa; /* Light background color */
+    padding: 20px;
+    margin: 0;
+}
+
+/* Style for the h1 element */
+.banner-title {
+    font-family: 'Arial', sans-serif; /* Change this to your preferred font */
+    font-weight: bold; /* Make the text bold */
+    font-size: 2.5rem; /* Adjust size for large screens */
+    color: #333; /* Text color */
+    margin: 0;
+}
+
+/* Style for the p element */
+.banner-subtitle {
+    font-family: 'Arial', sans-serif; /* Change this to your preferred font */
+    font-weight: normal; /* Normal weight for subtitle */
+    font-size: 1.25rem; /* Adjust size for large screens */
+    color: #666; /* Text color */
+    margin: 10px 0 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .banner-title {
+        font-size: 2rem; /* Smaller font size on medium screens */
+    }
+
+    .banner-subtitle {
+        font-size: 1rem; /* Smaller font size on medium screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .banner-title {
+        font-size: 1.5rem; /* Even smaller font size on small screens */
+    }
+
+    .banner-subtitle {
+        font-size: 0.875rem; /* Even smaller font size on small screens */
+    }
+}
+
+
+/* Foooter Section */
+
+/* General footer styles */
+#rs-footer {
+    background-color: #f8f9fa;
+    color: #f2eeee;
+}
+
+.footer-contact-desc {
+    margin-bottom: 30px;
+}
+
+.contact-inner {
+    text-align: center;
+    padding: 20px;
+}
+
+.contact-inner i {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.contact-title {
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.contact-desc {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.about-widget p {
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.footer-logo {
+    max-width: 150px;
+    margin-bottom: 15px;
+}
+
+.sitemap-widget {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sitemap-widget li {
+    margin-bottom: 10px;
+}
+
+.sitemap-widget li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+}
+
+.footer-share {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-share ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-share ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer-share ul li a {
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    padding: 15px 0;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+.footer-bottom a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .footer-contact-desc {
+        flex-direction: column;
+    }
+
+    .footer-contact-desc .col-md-4 {
+        margin-bottom: 20px;
+    }
+
+    .about-widget,
+    .sitemap-widget {
+        text-align: center;
+    }
+
+    .footer-share {
+        margin-top: 30px;
+    }
+}
