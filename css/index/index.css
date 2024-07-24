@@ -164,3 +164,44 @@
 .rs-header .nav-menu > li > a:hover {
     color: #555555; /* Change this to the desired hover color */
 }
+
+
+/* Popular Courses */
+
+.rs-carousel .cource-item {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.rs-carousel .course-body {
+    flex: 1;
+}
+
+.rs-carousel .course-footer {
+    margin-top: auto;
+}
+
+
+
+/* Partner Section */
+.partner-logo {
+    max-height: 80px; /* Default height for other logos */
+    object-fit: contain;
+    margin: 0 auto;
+    padding: 10px 15px;
+    display: block;
+}
+.large-logo {
+    max-height: 100px; /* Larger height for specific logos */
+}
+.rs-partner {
+    background-color: #ffffff;
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+}
+.rs-carousel .partner-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
