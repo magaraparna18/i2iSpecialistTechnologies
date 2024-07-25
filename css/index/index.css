@@ -7,7 +7,6 @@
 .rs-toolbar {
     background-color: #F4F4F4;
     padding: 0px 0;
-    
 }
 
 /* Welcome message font size */
@@ -34,12 +33,10 @@
 /* Space between logo and menu items */
 #logo-sticky {
     margin-right: 100px; 
-    
 }
 
 /* Space between menu items */
 .nav-menu > li {
-    
     margin-right: 0px; /* Adjust as needed */
 }
 
@@ -122,7 +119,6 @@
 
     .nav-menu > li {
         margin-right: 0;
-    
         margin-bottom: 10px; /* Space between menu items in mobile view */
     }
 
@@ -149,15 +145,15 @@
     flex-direction: column;
     width: 100%; /* Full width for mobile menu items */
 }
+
 /* Menu background color */
 .rs-header .menu-area {
-    background-color:#FFFFFF;
+    background-color: #FFFFFF;
 }
 
 /* Menu link color */
 .rs-header .nav-menu > li > a {
-    
-    color: #1111; /* Change this to the desired link color */
+    color: #000000; /* Change this to the desired link color (black) */
 }
 
 /* Menu link hover color */
@@ -185,29 +181,8 @@
 
 
 /* Partner Section */
-
-
-
-/* Slide Track and Animation */
-.slide-track {
-    display: flex;
-    width: 100%;
-    gap: 3em;
-    animation: scroll 60s linear infinite; /* Animation applied to the whole track */
-    overflow: hidden;
-}
-
-
-
-/* Keyframes for Scrolling Animation */
-@keyframes scroll {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-1000%); } /* Adjust -1000% based on number of logos and gap */
-}
-
-/* Partner Section Styling */
 .partner-logo {
-    max-height: 80px; /* Default height for logos */
+    max-height: 80px; /* Default height for other logos */
     object-fit: contain;
     margin: 0 auto;
     padding: 10px 15px;
@@ -311,12 +286,12 @@
 }
 
 .about-widget p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 1.8;
 }
 
 .footer-logo {
-    max-width: 150px;
+    max-width: 300px;
     margin-bottom: 15px;
 }
 

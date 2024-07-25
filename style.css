@@ -1193,6 +1193,7 @@ ul {
 .rs-header-3 .menu-area .rs-menu li a:hover,
 .rs-header-4 .menu-area .rs-menu li a:hover {
   color: #ff3115 !important;
+  
 }
 .rs-header-2 {
   position: absolute;
@@ -1287,7 +1288,7 @@ ul {
   margin: 0 auto;
 }
 .home2 .menu-area .rs-menu ul > li > a {
-  color: #bbbbbb;
+  color: #0c0c0c;
 }
 .home2 .menu-area .rs-menu ul > li > a:hover {
   color: #ff3115;
@@ -3231,7 +3232,7 @@ ul {
   height: 100%;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.6);
+  
   -webkit-transform: scaleY(0);
   -ms-transform: scaleY(0);
   transform: scaleY(0);
