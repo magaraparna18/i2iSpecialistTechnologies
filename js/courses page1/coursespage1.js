@@ -60,5 +60,4 @@
     // Courses page
    
     
-    
-    
+   
