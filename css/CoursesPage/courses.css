@@ -66,115 +66,228 @@
 }
 
 /* Offer Course 1  */
+/* Course Features Section */
 
-    .course-item {
-        border: 1px solid #ddd;
-        border-radius: 8px;
-        overflow: hidden;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .course-title{
-        color:blue;
+.form-control {
+  width: 400px;
+  height: 30px;
+}
+#message {
+  width: 200px;
+  height: 60px;
 
-
-    }
-
-  
-
-    .course-item:hover {    
-        transform: translateY(-10px);
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-    }
-
-    .course-img {
-        position: relative;
-    }
-
-    .course-img img {
-        width: 100%;
-        height: auto;
-        display: block;
-    }
-
-
-    .course-toolbar {
-        padding: 15px;
-        background: #b7e5fa;
-        border-bottom: 1px solid #ddd;
-        margin-bottom: 5px;
-        text-align: center;
-   
-    }
-
-    .course-category a {
-        color: #333;
-        text-decoration: none;
-        font-size: 16px;
-        font-weight: bold;
-    }
-
-    
-
-    .course-date, .course-duration {
-        font-size: 14px;
-        color: #555;
-    }
-
-    .course-body {
-        padding: 15px;
-    }
-
-    .course-desc {
-        font-size: 15px;
-        color: #333;
-    }
-
-    .course-desc h4 {
-        margin-top: 0;
-        font-size: 18px;
-    }
-
-    .course-desc ul {
-        padding-left: 20px;
-        margin: 10px 0;
-        list-style-type: disc;
-    }
-
-    .course-desc li {
-        margin-bottom: 10px;
-    }
-
-    .course-footer {
-        padding: 15px;
-        background: #f5f5f5;
-        border-top: 1px solid #ddd;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .course-seats {
-        font-size: 14px;
-        color: #ff5722;
-    }
-
-    .course-button a {
-        background: #ff5722;
-        color: #fff;
-        padding: 10px 15px;
-        text-decoration: none;
-        border-radius: 5px;
-        font-weight: bold;
-        transition: background-color 0.3s ease;
-    }
-
-    .course-button a:hover {
-        background-color: #e64a19;
-    }
+}
+.form-control::placeholder {
+  color: #888; /* Optional: to make placeholder text appear lighter */
+}
 
 
 
+/* Contact Form Section */
+.card.contact-form {
+  background-color:  #0c0909;
+  color: white;
+  /* Ensure the card doesn't exceed the width of its container */
+  max-width: 100%;
+  margin: auto;
+  padding: 15px;
+}
 
-    /* Menu Menu bar */
-   
+.course-features-info {
+  background-color: #0c0909;
+  color: white; /* Optional: if you want to change the text color for better readability */
+}
+
+.card.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch; /* Ensure form items stretch to fill container */
+}
+
+.form-control {
+  width: 100%; /* Full width to ensure responsiveness */
+  max-width: 400px; /* Maximum width */
+  height: 40px; /* Increased height for better usability */
+  margin-bottom: 10px; /* Space between form elements */
+}
+
+#message {
+  width: 100%; /* Full width to ensure responsiveness */
+  max-width: 400px; /* Maximum width */
+  height: 80px; /* Increased height for better usability */
+}
+
+.form-control::placeholder {
+  color: #888; /* Optional: to make placeholder text appear lighter */
+}
+
+/* Optional: Form group spacing */
+.form-group {
+  margin-top: 15px;
+}
+
+/* Offer Course 1  */
+/* General Styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Accordion Item */
+.card {
+  border: 1px solid #030000;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card-footer {
+  background-color: #bdd5ec;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.card-footer h3 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.accordion-header {
+  padding: 0;
+  border: none;
+}
+
+.accordion-button {
+  background-color: #f8f9fa;
+  border: none;
+  padding: 0;
+  text-align: center;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-body {
+  padding: 20px;
+  background: #f8f9fa;
+  max-height: 200px; /* Limit the height for scrolling */
+  overflow-y: auto;
+}
+
+.description {
+  background-color: #e9ecef;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.description ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.description li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.course-details {
+  padding-top: 15px;
+  text-align: center;
+}
+
+.course-duration {
+  font-size: 1rem;
+  color: rgb(161, 42, 42);
+  margin-bottom: 10px;
+}
+
+.read-more-btn {
+  display: inline-block;
+  padding: 6px 12px; /* Reduced padding */
+  font-size: 0.875rem; /* Reduced font size */
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.read-more-btn:hover {
+  background-color: #0056b3;
+}
+
+.apply-now-btn {
+  display: inline-block;
+  padding: 6px 12px; /* Reduced padding */
+  font-size: 0.875rem; /* Reduced font size */
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.apply-now-btn:hover {
+  background-color: #0056b3;
+}
+
+.gridFilter .btn {
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+}
+
+.gridFilter .btn::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: black;
+  transition: width 0.4s ease;
+  -webkit-transition: width 0.4s ease;
+}
+
+.gridFilter .btn:hover::after {
+  width: 100%;
+  left: 0;
+  background-color: rgb(209, 3, 3);
+}
+
+
+/* our courses css */
+.underline {
+  position: relative;
+  display: inline-block;
+}
+
+.underline::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1px; /* Adjust the distance from the text */
+  width: 100%;
+  height: 2px; /* Thickness of the underline */
+  background-color: red; /* Color of the underline */
+}
+

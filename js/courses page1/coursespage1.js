@@ -55,3 +55,9 @@
         // Form is valid
         alert('Form submitted successfully!');
     });
+
+
+    // Courses page
+   
+    
+   
