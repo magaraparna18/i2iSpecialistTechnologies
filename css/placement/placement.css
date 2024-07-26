@@ -44,7 +44,7 @@
 
 .course-body {
     padding: 20px;
-    text-align: center;
+    text-align: left; /* Align text to the left */
 }
 
 .course-body h2 {
@@ -53,10 +53,19 @@
     color: #333;
 }
 
-.course-body h4 {
+.course-body h4.student-name {
     margin: 0 0 10px;
-    font-size: 1em;
+    font-size: 1.4em; /* Larger font size for student name */
+    color: #333;
+    text-align: center; /* Center align student name */
+}
+
+.course-body h4.company-name,
+.course-body h4.position-title {
+    margin: 0 0 10px;
+    font-size: 1em; /* Smaller font size for company name and position */
     color: #555;
+    text-align: left; /* Left align company name and position */
 }
 
 .course-body h3 {
