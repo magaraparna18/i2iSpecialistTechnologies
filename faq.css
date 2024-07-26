@@ -1,0 +1,33 @@
+.card-header {
+    margin-left: 40px;  
+    margin-right: 40px; 
+}
+
+.sec-title {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.sec-title .title {
+    font-size: 2em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s, box-shadow 0.3s;
+}
+
+.sec-title .title i {
+    margin-right: 10px;
+    color: #3498db;
+}
+
+.sec-title p {
+    font-size: 1.2em;
+    color: #7f8c8d;
+}
+
+.sec-title.clicked .title {
+    color: #3498db;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
