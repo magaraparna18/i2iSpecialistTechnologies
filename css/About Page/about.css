@@ -1,24 +1,88 @@
-.team-item {
-    position: relative;
+/* Staff images */
+.team-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
 }
+
+.second-row {
+    justify-content: center;
+}
+
+.team-item {
+    flex: 1;
+    margin: 0 15px;
+    text-align: center;
+    position: relative; /* Position relative to ensure the box is positioned correctly */
+}
+
 .team-img {
     position: relative;
+    overflow: hidden; /* Hide overflow to make sure no content goes outside */
 }
-.team-details {
+
+.team-img img {
+    height: 481px; /* Ensure height consistency */
+    width: 100%;   /* Ensure the image takes full width of its container */
+    object-fit: cover; /* Ensure the image covers the container without distortion */
+    transition: transform 0.3s ease; /* Smooth transition for image scaling */
+}
+
+.team-img:hover img {
+    transform: scale(1.1); /* Slightly zoom the image on hover */
+}
+
+.team-box {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
-    color: white;
+    right: 0;
+    background: rgb(29, 26, 26); /* Black background */
+    color: white;      /* White text color */
+    padding: 15px;
     text-align: center;
-    padding: 10px 0;
+    box-sizing: border-box;
+   
 }
+
+.team-item:hover .team-box {
+    opacity: 1; /* Show the box on hover */
+}
+
+.team-details {
+    color: white;      /* White link color to match the text */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth transition for text color */
+}
+
+.team-details:hover {
+    color: #ff9800; /* Change link color on hover */
+}
+
 .team-title {
+    font-size: 18px;
     margin: 0;
-    font-size: 16px;
-    font-weight: bold;
+    color: white;      /* White color for the name */
+    transition: color 0.3s ease; /* Smooth transition for text color */
 }
+
+.team-title:hover {
+    color: #ff9800; /* Change name color on hover */
+}
+
 .team-position {
     font-size: 14px;
+    margin: 0;
+    color: white;      /* White color for the position */
+    transition: color 0.3s ease; /* Smooth transition for text color */
 }
+
+.team-position:hover {
+    color: #ff9800; /* Change position color on hover */
+}
+
+.second-row .team-item {
+    flex: 0 0 30%; /* Adjust this value to fit the two images in the center */
+}
+
+
