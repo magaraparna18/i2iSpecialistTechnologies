@@ -239,7 +239,11 @@
         font-size: 1rem; /* Smaller font size on medium screens */
     }
 }
-
+ @media(max-width:768px){
+    #logo-sticky{
+        margin-right: 0px;
+    }
+ }
 @media (max-width: 576px) {
     .banner-title {
         font-size: 1.5rem; /* Even smaller font size on small screens */
