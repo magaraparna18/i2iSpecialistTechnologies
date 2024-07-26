@@ -312,39 +312,6 @@
 
 
 
-/* Courses Link (Our Courses Near) */
-.gridFilter .btn {
-    text-decoration: none;
-    position: relative;
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 5px;
-    transition: all 0.3s ease;
-}
-
-.gridFilter .btn::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    display: block;
-    margin-top: 5px;
-    right: 0;
-    background: black;
-    transition: width 0.4s ease;
-}
-
-.gridFilter .btn:hover::after {
-    width: 100%;
-    left: 0;
-    background-color: rgb(209, 3, 3);
-}
-
-.gridFilter .btn.active {
-    color: blue;
-}
-
 
 
 /* Our Courses */
-
