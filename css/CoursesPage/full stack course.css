@@ -53,3 +53,112 @@
     font-size: 1rem;
     font-weight: 500;
 }
+/* Instructor and Basic Information Section */
+.instructor-title {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.instructor-inner, .info-list {
+    margin-bottom: 20px;
+}
+
+.instructor-img img, .post-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.instructor-body .name, .post-desc h4 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.google-ratings .rating-stars {
+    display: inline-block;
+    font-size: 1.2em;
+}
+
+.short-desc, .apply-btn a {
+    margin-top: 10px;
+}
+.apply a:hover {
+    background-color: #b30021; /* Change color on hover */
+}
+
+.apply a {
+    display: inline-block;
+     padding: 10px 20px; 
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Course Description and Why Full Stack Development Section */
+.course-desc, .why-fullstack-container {
+    margin-top: 30px;
+}
+
+.desc-title, .why-fullstack-title {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.desc-text, .why-fullstack-grid {
+    margin-bottom: 20px;
+}
+
+.why-fullstack-item {
+    margin-bottom: 10px;
+}
+
+.why-fullstack-link {
+    font-size: 1.1em;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.why-fullstack-link:hover {
+    text-decoration: underline;
+}
+
+/* Latest Courses Section */
+.latest-courses-horizontal {
+    margin-top: 30px;
+}
+
+.latest-courses-horizontal .title {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.latest-courses-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.post-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    width: calc(25% - 15px);
+}
+
+.post-desc {
+    margin-top: 10px;
+}
+
+.post-desc h4 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.post-desc .duration, .post-desc .price {
+    font-size: 0.9em;
+    color: #555;
+}

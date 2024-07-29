@@ -51,7 +51,7 @@
 </head>
 
 <body class="home2">
-	<!-- Full width header End -->
+	<!-- Full width header Start -->
 	<div class="full-width-header">
 		<!-- Toolbar Start -->
 		<div class="rs-toolbar">
@@ -70,16 +70,17 @@
 							<div class="toolbar-share-icon" style="color: black;">
 								<ul class="list-inline mb-0">
 									<li class="list-inline-item"><a
-											href="https://www.facebook.com/i2ispecialist_Technologies"><i
+											href="https://www.facebook.com/i2ispecialist_Technologies"target="_blank"><i
 												class="fa fa-facebook"></i></a></li>
-									<li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
-									<li class="list-inline-item"><a href="#"><i class="fa fa-google-plus"></i></a></li>
-									<li class="list-inline-item"><a
-											href="https://www.linkedin.com/company/i2ispecialist-technologies-pvt-ltd/posts/?feedView=all"><i
+									<li><a href="https://www.instagram.com/i2ispecialisttechnologies/"
+											target="_blank"><i class="fa fa-instagram"></i></a></li>
+									<li><a href="https://g.co/kgs/CyBswsZ" target="_blank"><i class="fa fa-google"
+												target="_blank"></i></a></li>
+									<li class="list-inline-item"><a href="https://www.linkedin.com/company/i2ispecialist-technologies-pvt-ltd/posts/?feedView=all"target="_blank"><i
 												class="fa fa-linkedin"></i></a></li>
 								</ul>
 							</div>
-							<a href="#" class="apply-btn">Apply Now</a>
+							<a href="https://docs.google.com/forms/d/e/1FAIpQLSdQFiPBIQDdIAt-pSZHcIfx2Spz_DJLYClcX8Q7N0u-KJbhAw/viewform" class="apply-btn">Apply Now</a>
 						</div>
 					</div>
 				</div>
@@ -106,7 +107,7 @@
 								<ul class="nav-menu list-unstyled mb-0 d-flex">
 									<!-- Home -->
 									<li class="current-menu-item current_page_item menu-item-has-children mr-3">
-										<a href="index4.html" class="home">Home</a>
+										<a href="index.html" class="home">Home</a>
 									</li>
 									<!-- End Home -->
 
@@ -121,7 +122,7 @@
 										<a href="courses.html">Courses</a>
 										<ul class="sub-menu list-unstyled">
 											<li class="menu-item-has-children">
-												<a href="trendingcourses.html">Trending Courses</a>
+												<a href="Trending_caurses.html">Trending Courses</a>
 
 											</li>
 											<li class="menu-item-has-children">
@@ -129,19 +130,19 @@
 
 											</li>
 											<li class="menu-item-has-children">
-												<a href="#">Data Science</a>
+												<a href="datascience.html">Data Science</a>
 
 											</li>
 											<li class="menu-item-has-children">
-												<a href="#">Data Analytics</a>
+												<a href="DataAnalytics.html">Data Analytics</a>
 
 											</li>
 											<li class="menu-item-has-children">
-												<a href="#">Software Testing</a>
+												<a href="SoftwareTesting.html">Software Testing</a>
 
 											</li>
 											<li class="menu-item-has-children">
-												<a href="#">Digital Marketing</a>
+												<a href="DigitalMarketing.html">Digital Marketing</a>
 
 											</li>
 										</ul>
@@ -177,7 +178,7 @@
 									<!-- Contact Menu End -->
 
 									<!-- Login Menu Start -->
-									<li><a href="contact.html">Login/Register</a></li>
+									<!-- <li><a href="contact.html">Login/Register</a></li> -->
 									<!-- Login Menu End -->
 								</ul>
 							</nav>
@@ -546,106 +547,24 @@
 	</div>
 	<!-- Partner End -->
 	<br>
-	<!-- Footer Start -->
-	<footer id="rs-footer" class="bg3 rs-footer">
-		<div class="container">
-			<!-- Footer Address -->
-			<div class="row footer-contact-desc">
-				<div class="col-md-4">
-					<div class="contact-inner">
-						<i class="fa fa-map-marker"></i>
-						<h4 class="contact-title">Address</h4>
-						<p class="contact-desc">
-							Block A1, Office No 11A City Vista Tower,<br>
-							Fountain Road, Kharadi, Pune, Maharashtra 411014
-						</p>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="contact-inner">
-						<i class="fa fa-phone"></i>
-						<h4 class="contact-title">Phone Number</h4>
-						<p class="contact-desc">
+	<!-- Footer Placeholder -->
+	<div id="footer-placeholder"></div>
 
-							+91 8329665280 <br> +91 9850169848
-						</p>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="contact-inner">
-						<i class="fa fa-envelope"></i>
-						<h4 class="contact-title">Email Address</h4>
-						<p class="contact-desc">
-							<a href="mailto:info@i2ispecialist.com">info@i2ispecialist.com</a><br>
-							<a href="http://www.i2ispecialist.com">www.i2ispecialist.com</a>
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
+	<!-- Load Footer Script -->
+	<script>
+		// Function to load the footer
+		function loadFooter() {
+			fetch('footer.html')
+				.then(response => response.text())
+				.then(data => {
+					document.getElementById('footer-placeholder').innerHTML = data;
+				})
+				.catch(error => console.error('Error loading footer:', error));
+		}
 
-		<!-- Footer Top -->
-		<div class="footer-top">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-6 col-md-12">
-						<div class="about-widget"><br>
-							<img src="images/i2iLogo1.png" alt="Footer Logo" class="footer-logo">
-							<p>At i2iSpecialist Technologies, we specialize in providing top-notch training and placement services in
-								various fields, including IT, management, and more. Our mission is to empower
-								individuals with the skills needed for successful careers.</p>
-						</div>
-					</div>
-					<br><br><br>
-					<div class="col-lg-6 col-md-12" style=" margin-top: 100px">
-						<h5 class="footer-title">OUR SITEMAP</h5>
-						<ul class="sitemap-widget">
-							<li><a href="index4.html"><i class="fa fa-angle-right"></i> Home</a></li>
-							<li><a href="about.html"><i class="fa fa-angle-right"></i> About Us</a></li>
-							<li><a href="courses.html"><i class="fa fa-angle-right"></i> Courses</a></li>
-							<li><a href="blog.html"><i class="fa fa-angle-right"></i> Blogs</a></li>
-							<li><a href="placement.html"><i class="fa fa-angle-right"></i> Placement</a></li>
-							<li><a href="jobopening.html"><i class="fa fa-angle-right"></i> Job Opening</a></li>
-							<li><a href="faq.html"><i class="fa fa-angle-right"></i> FAQ</a></li>
-							<li><a href="contact.html"><i class="fa fa-angle-right"></i> Contact Us</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="footer-share">
-					<ul>
-						<li><a href="https://www.facebook.com/i2ispecialist_Technologies/"><i
-									class="fa fa-facebook"></i></a></li>
-						<li><a href="https://g.co/kgs/CyBswsZ" target="_blank"><i class="fa fa-google"
-									target="_blank"></i></a></li>
-						<li><a href="https://www.instagram.com/i2ispecialisttechnologies/" target="_blank"><i
-									class="fa fa-instagram"></i></a></li>
-						<li><a href="https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Aorganization%3A74704151&keywords=i2ispecialist%20technologies%20pvt.%20ltd.&origin=RICH_QUERY_SUGGESTION&position=0&searchId=5089aee4-2d1e-4c3b-92da-f328e6f32a58&sid=o6-&spellCorrectionEnabled=false"
-								target="_blank"><i class="fa fa-linkedin"></i></a></li>
-						<li><a href="https://wa.me/8888804265" target="_blank"><i class="fa fa-whatsapp"></i></a>
-						</li>
-					</ul>
-				</div>
-
-
-			</div>
-		</div>
-
-		<!-- Footer Bottom -->
-		<div class="footer-bottom">
-			<div class="container">
-				<div class="copyright">
-					<p>© 2024 i2i Specialist. All Rights Reserved.</p>
-				</div>
-			</div>
-		</div>
-	</footer>
-	<!-- Footer End -->
-	<!-- start scrollUp  -->
-	<div id="scrollUp">
-		<i class="fa fa-angle-up"></i>
-	</div>
-	<!-- End scrollUp  -->
-
+		// Call the function to load the footer
+		loadFooter();
+	</script>
 
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
