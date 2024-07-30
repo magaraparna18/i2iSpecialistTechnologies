@@ -1,0 +1,48 @@
+/* Style for all h1 elements within the container */
+.container-fluid h1 {
+    color: #ffffff; /* White text color */
+    font-size: 2.5rem; /* Adjust size as needed */
+    margin-bottom: 1rem; /* Space below the heading */
+}
+
+/* Style for all h3 elements within the container */
+.container-fluid h3 {
+    color: #ffffff; /* White text color */
+    font-size: 1.75rem; /* Adjust size as needed */
+    margin-bottom: 1rem; /* Space below the heading */
+    font-weight: bold;
+}
+
+/* Style for all p elements within the container */
+.container-fluid p {
+    color: #e0e0e0; /* Slightly lighter text color */
+    font-size: 1rem; /* Adjust size as needed */
+    line-height: 1.6; /* Increase line spacing */
+    text-align: justify;
+}
+
+/* Style for images within the container */
+.container-fluid img {
+    border: 5px solid #ffffff; /* White border around the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow effect for depth */
+    width: 300px; /* Fixed width */
+    height: 320px; /* Fixed height */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+/* Style for all h4 elements within the container */
+.container-fluid h4 {
+    color: #ffffff; /* White text color */
+    margin-top: 1rem; /* Space above the heading */
+    font-weight: bold;
+}
+
+/* Style for all links within the container */
+.container-fluid a {
+    color: #ffffff; /* White text color for links */
+    text-decoration: none; /* Remove underline from links */
+}
+.col-md-5{
+    margin-left: 30px;
+}
+
