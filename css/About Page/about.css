@@ -19,6 +19,7 @@
 .team-img {
     position: relative;
     overflow: hidden; /* Hide overflow to make sure no content goes outside */
+    height: 400px;
 }
 
 .team-img img {
