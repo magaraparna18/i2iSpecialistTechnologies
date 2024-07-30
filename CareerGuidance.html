@@ -201,13 +201,11 @@
 
 
  <!-- Latest News Start -->
-
-
 <div class="container-fluid bg-dark text-white py-5">
     <div class="row align-items-center gx-5" style="margin-left: 15px; margin-right: 15px;">
         <div class="col-md-5 px-4" >
             <h1>Career Development Programmes</h1>
-            <h3 class="font-weight-bold">Learn the essential skills for your creative career</h3>
+            <h4 class="font-weight-bold">Master the key skills needed for a successful creative career</h4>
             <p>With advice and career guidance from your personal mentor we will push you to reach your creative and career
                 goals. Choose a software bundle to upgrade your existing skill set, or start on the path to a new career or setting up your own business.</p>
         </div>
@@ -218,11 +216,8 @@
             <p>Sandip is the founder and director of Technoartz, i2ispecialist Technologies Pvt. Ltd. Sandip founded i2ispecialist in 2018 with the mission of helping businesses and individuals reach their creative and design software goals. </p>
     </div>
 </div>
+<!-- Latest News End -->  
 
-
-
-
-<!-- Latest News End -->  				
 		<br>
 		<!-- Partner Start -->
 		<div id="rs-partner" class="rs-partner pt-70 pb-70" style="animation: scroll 60s linear infinite">
@@ -291,23 +286,25 @@
 		<!-- Partner End -->
 		<br>
 		<!-- Footer Placeholder -->
-	<div id="footer-placeholder"></div>
+	 <!-- Footer Placeholder -->
+	 <div id="footer-placeholder"></div>
 
-	<!-- Load Footer Script -->
-	<script>
-		// Function to load the footer
-		function loadFooter() {
-			fetch('footer.html')
-				.then(response => response.text())
-				.then(data => {
-					document.getElementById('footer-placeholder').innerHTML = data;
-				})
-				.catch(error => console.error('Error loading footer:', error));
-		}
-
-		// Call the function to load the footer
-		loadFooter();
-	</script>
+	 <!-- Load Footer Script -->
+		 <script>
+			 // Function to load the footer
+			 function loadFooter() {
+				 fetch('footer.html')
+					 .then(response => response.text())
+					 .then(data => {
+						 document.getElementById('footer-placeholder').innerHTML = data;
+					 })
+					 .catch(error => console.error('Error loading footer:', error));
+			 }
+	 
+			 // Call the function to load the footer
+			 loadFooter();
+		 </script>
+		  
 
 
 		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
