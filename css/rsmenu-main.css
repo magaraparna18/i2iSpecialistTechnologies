@@ -10,7 +10,7 @@ Version: 1.0.0
 .rs-menu {
    float: left;
    clear: both;
-   width: 100%;
+   width: 100px;
    font-size: 0;
    position: relative;
    /*background: #1c1c1c;
