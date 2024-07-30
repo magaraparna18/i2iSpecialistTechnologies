@@ -24,6 +24,7 @@
     text-decoration: none;
 }
 
+/* Header CSS */
 /* Header contact styles */
 .header-contact {
     display: flex;
@@ -160,14 +161,14 @@
 .rs-header .nav-menu > li > a:hover {
     color: #555555; /* Change this to the desired hover color */
 }
-
-
 /* Popular Courses */
 
 .rs-carousel .cource-item {
     display: flex;
     flex-direction: column;
     height: 100%;
+    border: 1px solid black;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
 }
 
 .rs-carousel .course-body {
@@ -486,4 +487,40 @@
     .team-grid {
         grid-template-columns: 1fr; /* 1 item per row */
     }
+}
+
+
+/* Learning Objective CSS */
+/* External CSS for Learning Objectives Section */
+.rs-learning-objectives .courses-item {
+    border: 1px solid black; /* Light border around each item */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 5px; /* Optional: Rounded corners */
+    padding: 20px; /* Space inside the border */
+    margin-bottom: 30px; /* Space between items */
+    background-color: #9b949498; /* Background color */
+    transition: box-shadow 0.3s ease; /* Smooth shadow transition */
+}
+
+.rs-learning-objectives .courses-item:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.rs-learning-objectives .courses-item i {
+    font-size: 2em; /* Icon size */
+    margin-bottom: 15px; /* Space below the icon */
+}
+
+.rs-learning-objectives .courses-title {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.rs-learning-objectives .courses-title a {
+    text-decoration: none;
+    color: inherit; /* Use inherited color */
+}
+
+.rs-learning-objectives .courses-item p {
+    line-height: 1.6;
 }

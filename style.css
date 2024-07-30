@@ -1957,7 +1957,7 @@ ul {
   color: #fff;
   width: 100%;
   height: 100%;
-  z-index: 8;
+  
 }
 #rs-slider .slide-content .slider-title {
   font-size: 60px;
@@ -2421,6 +2421,8 @@ ul {
 .rs-services-style7 .Services-wrap .Services-item {
   position: relative;
   overflow: hidden;
+  border: 1px solid black;
+  box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.3);
 }
 .rs-services-style7 .Services-wrap .Services-item:before {
   position: absolute;
@@ -5246,6 +5248,8 @@ ul {
 .rs-team .team-item {
   position: relative;
   overflow: hidden;
+  border: 1px solid black;
+  box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.3);
 }
 .rs-team .team-item .team-img {
   position: relative;
