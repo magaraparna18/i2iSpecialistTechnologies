@@ -1,89 +1,185 @@
-/* Staff images */
-.team-row {
+.rs-team .team-row {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 -15px;
+}
+
+.rs-team .team-item {
+    padding: 15px;
     margin-bottom: 30px;
 }
 
-.second-row {
-    justify-content: center;
-}
-
-.team-item {
-    flex: 1;
-    margin: 0 15px;
-    text-align: center;
-    position: relative; /* Position relative to ensure the box is positioned correctly */
-}
-
-.team-img {
+.rs-team .team-img {
     position: relative;
-    overflow: hidden; /* Hide overflow to make sure no content goes outside */
-    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
 }
 
-.team-img img {
-    height: 481px; /* Ensure height consistency */
-    width: 100%;   /* Ensure the image takes full width of its container */
-    object-fit: cover; /* Ensure the image covers the container without distortion */
-    transition: transform 0.3s ease; /* Smooth transition for image scaling */
+.rs-team .team-img img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
-.team-img:hover img {
-    transform: scale(1.1); /* Slightly zoom the image on hover */
-}
-
-.team-box {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgb(29, 26, 26); /* Black background */
-    color: white;      /* White text color */
-    padding: 15px;
+.rs-team .team-box {
     text-align: center;
-    box-sizing: border-box;
-   
+    padding: 10px 0;
 }
 
-.team-item:hover .team-box {
-    opacity: 1; /* Show the box on hover */
+.rs-team .team-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 10px;
 }
 
-.team-details {
-    color: white;      /* White link color to match the text */
-    text-decoration: none;
-    transition: color 0.3s ease; /* Smooth transition for text color */
+.rs-team .team-position {
+    font-size: 1em;
+    color: #777;
 }
 
-.team-details:hover {
-    color: #ff9800; /* Change link color on hover */
+@media (max-width: 992px) {
+    .rs-team .team-item {
+        max-width: 50%;
+        flex: 0 0 50%;
+    }
 }
 
-.team-title {
-    font-size: 18px;
-    margin: 0;
-    color: white;      /* White color for the name */
-    transition: color 0.3s ease; /* Smooth transition for text color */
+@media (max-width: 768px) {
+    .rs-team .team-item {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
 }
 
-.team-title:hover {
-    color: #ff9800; /* Change name color on hover */
+
+/* General Styles */
+.sec-spacer {
+    padding: 50px 0;
 }
 
-.team-position {
-    font-size: 14px;
-    margin: 0;
-    color: white;      /* White color for the position */
-    transition: color 0.3s ease; /* Smooth transition for text color */
+.sec-title, .abt-title {
+    margin-bottom: 50px;
 }
 
-.team-position:hover {
-    color: #ff9800; /* Change position color on hover */
+.text-center {
+    text-align: center;
 }
 
-.second-row .team-item {
-    flex: 0 0 30%; /* Adjust this value to fit the two images in the center */
+.mb-50 {
+    margin-bottom: 50px;
 }
 
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+@media (max-width: 1200px) {
+    /* About Us Section */
+    .about-img img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Why Choose Us Section */
+    .choose-desc p {
+        font-size: 14px;
+    }
+
+    .choose-item {
+        margin-bottom: 30px;
+    }
+
+    /* Team Section */
+    .team-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .team-item {
+        width: 100%;
+        max-width: 300px;
+        margin: 10px;
+    }
+
+    .team-img img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 992px) {
+    /* About Us Section */
+    .about-img img {
+        margin-bottom: 20px;
+    }
+
+    .about-desc h3, .about-desc p {
+        font-size: 14px;
+    }
+
+    /* Why Choose Us Section */
+    .choose-desc p {
+        font-size: 13px;
+    }
+
+    /* Team Section */
+    .team-item {
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* General Adjustments */
+    .container {
+        padding: 0 15px;
+    }
+
+    /* About Us Section */
+    .about-img {
+        margin-bottom: 20px;
+    }
+
+    /* Why Choose Us Section */
+    .choose-desc {
+        font-size: 12px;
+    }
+
+    .choose-item h3 {
+        font-size: 18px;
+    }
+
+    /* Team Section */
+    .team-item {
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 576px) {
+    /* About Us Section */
+    .about-desc h3, .about-desc p {
+        font-size: 12px;
+    }
+
+    /* Why Choose Us Section */
+    .choose-desc p {
+        font-size: 12px;
+    }
+
+    /* Team Section */
+    .team-item {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .team-img img {
+        width: 100%;
+    }
+}
 
