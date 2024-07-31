@@ -1,4 +1,9 @@
 /* Full-width header */
+
+
+body{
+    background-color: #F1F1F1;
+}
 .full-width-header {
     width: 100%;
 }
