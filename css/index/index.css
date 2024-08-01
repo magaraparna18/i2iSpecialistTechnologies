@@ -6,28 +6,23 @@ body{
 }
 .full-width-header {
     width: 100%;
-}
-
-/* Toolbar styles */
-.rs-toolbar {
-    background-color: #F4F4F4;
-    padding: 0px 0;
-}
+} 
+/* no */
 
 /* Welcome message font size */
-.welcome-message {
+/* .welcome-message {
     font-size: 16px;
     color: black;
-}
+} */
 
 /* Apply button styles */
-.apply-btn {
+/* .apply-btn {
     background-color: #007bff;
     color: #fff;
     padding: 5px 10px;
     border-radius: 5px;
     text-decoration: none;
-}
+} */
 
 /* Header CSS */
 /* Header contact styles */
@@ -37,9 +32,9 @@ body{
 }
 
 /* Space between logo and menu items */
-#logo-sticky {
+/* #logo-sticky {
     margin-right: none; 
-}
+} */
 
 /* Space between menu items */
 .nav-menu > li {
