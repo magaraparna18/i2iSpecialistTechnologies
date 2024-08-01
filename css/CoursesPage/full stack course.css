@@ -167,4 +167,12 @@
 
 
 
-/* One to One  */
+/* Student Practical word Border  */
+
+
+.event-item {
+    border: 1px solid #000; /* Change to your preferred border color */
+    border-radius: 10px; /* Optional: Add border radius if needed */
+    padding: 10px; /* Optional: Add padding inside the card */
+    margin-bottom: 20px; /* Optional: Add margin between cards */
+}
