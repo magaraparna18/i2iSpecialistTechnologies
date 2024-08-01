@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Roboto+Condensed:400,500,600,700');
 
-
+/* 
 [class*='rs-animation-'] {
   -webkit-animation-duration: 0.5s;
   animation-duration: 0.5s;
@@ -8,7 +8,7 @@
   animation-timing-function: ease-out;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-}
+} */
 .rs-animation-fade {
   -webkit-animation-name: rs-fade;
   animation-name: rs-fade;
@@ -1028,14 +1028,14 @@ ul {
   padding-bottom: 0 !important;
 }
 /* ------------------------------------
-    03. Header Section  
+    03. Header Section  okkkkkkkkkkk
 ---------------------------------------*/
 .rs-toolbar {
-  padding: 4px 0 5px;
-  background-color: #111111;
+  background-color: #F4F4F4;
+  padding: 0px 0;
 }
 .rs-toolbar .rs-toolbar-left .welcome-message {
-  font-size: 14px;
+  font-size: 16px;
 }
 .rs-toolbar .rs-toolbar-left .welcome-message i {
   color: #ff3115;
@@ -1069,21 +1069,26 @@ ul {
 .rs-toolbar .rs-toolbar-right .apply-btn {
   font-weight: 500;
   font-size: 14px;
+  background-color: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
 }
 /* ------------------------------------
     02. Header Start
 ---------------------------------------*/
-.rs-header .rs-header-top {
+/* .rs-header .rs-header-top {
   padding: 25px 0 20px;
-}
-.rs-header .rs-header-top .header-contact {
+} */
+/* .rs-header .rs-header-top .header-contact {
   float: right;
-}
-.rs-header .rs-header-top .header-contact .widget-text {
+} */
+ .widget-text {
   position: relative;
   padding-left: 55px;
 }
-.rs-header .rs-header-top .header-contact .widget-text i {
+.widget-text i {
   position: absolute;
   border-radius: 2px;
   text-align: center;
@@ -1095,15 +1100,15 @@ ul {
   transition: all .3s ease;
   font-weight: 700;
 }
-.rs-header .rs-header-top .header-contact .widget-text .info-text a {
+ .widget-text .info-text a {
   color: #505050;
   font-weight: 400;
   font-size: 16px;
 }
-.rs-header .rs-header-top .header-contact .widget-text .info-text a:hover {
+ .widget-text .info-text a:hover {
   color: #ff3115;
 }
-.rs-header .rs-header-top .header-contact .widget-text .info-text span {
+ .widget-text .info-text span {
   display: block;
   font-weight: 700;
   color: #101010;
@@ -1282,7 +1287,7 @@ ul {
 .home2 .right-bar-icon a:hover {
   color: #fff;
 }
-.home1 .right-bar-icon .rs-search,
+
 .home2 .right-bar-icon .rs-search {
   position: static;
   color: #fff;
@@ -1398,7 +1403,7 @@ ul {
 #rs-header.rs-transfarent-header-style .menu-area {
   background: transparent;
 }
-#rs-header.rs-transfarent-header-style .menu-area .rs-menu .nav-menu > li > a {
+#rs-header.rs-transfarent-header-style .menu-area .rs-menu  {
   color: #ffffff;
 }
 #rs-header.rs-transfarent-header-style .rs-right-btn-inner {
@@ -1594,10 +1599,7 @@ ul {
   right: 15px;
   top: 26px;
 }
-.home5 .rs-header .main-menu .nav-expander:hover {
-  transform: scale(1.1);
-  color: #ff3115;
-}
+
 .home5 .rs-header .sticky {
   background: #fff;
 }
@@ -1663,18 +1665,18 @@ ul {
   border-radius: 30px;
   transition: 0.4s;
 }
-.instructor-home .rs-header .apply-box:hover {
+ .rs-header .apply-box:hover {
   background: #e41f05;
 }
-.instructor-home .rs-header .apply-box a {
+ .rs-header .apply-box a {
   color: #fff;
   display: block;
   text-transform: uppercase;
 }
-.instructor-home .searce-box {
+.searce-box {
   padding-top: 28px;
 }
-.instructor-home .searce-box i {
+ .searce-box i {
   color: #ff3115;
 }
 .university-home .menu-area {
