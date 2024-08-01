@@ -2446,6 +2446,7 @@ ul {
 }
 .rs-services-style7 .Services-wrap .Services-item .Services-desc .services-title a {
   color: #ffffff;
+  background: #090808;
 }
 .rs-services-style7 .Services-wrap .Services-item:hover:before {
   opacity: 1;
@@ -8984,6 +8985,46 @@ ul {
   }
 }
 
+.navbar-nav > li > a {
+  font-weight: 500;
+  font-size: 16px;
+  margin: 10px;
+  color: black!important;
+}
+
+
+.nav-item .active {
+color: red!important;
+}
+
+.nav-item .active .nav-link {
+color: red!important;
+}
+.dropdown-menu{
+display: none;
+position: absolute;
+top: 100%;
+left: 0;
+padding: 0;
+margin: 10px;
+list-style: none;
+background: #292828;
+border: 1px solid #ddd;
+z-index: 1000;
+}
+.dropdown-item {
+display: block;
+width: 100%;
+padding: .25rem 1rem;
+clear: both;
+font-weight: 400;
+color: white!important;
+
+} 
+.dropdown-item:hover { 
+background-color: blue!important;
+color: red!important;
+}
 
 
 

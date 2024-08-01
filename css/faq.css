@@ -1,4 +1,4 @@
-.card-header {
+/* .card-header {
     margin-left: 40px;  
     margin-right: 40px; 
 }
@@ -6,8 +6,8 @@
 .sec-title {
     margin-bottom: 50px;
     text-align: center;
-}
-
+} */
+/* 
 .sec-title .title {
     font-size: 2em;
     color: #2c3e50;
@@ -25,9 +25,15 @@
 .sec-title p {
     font-size: 1.2em;
     color: #7f8c8d;
-}
-
+} */
+/* 
 .sec-title.clicked .title {
     color: #3498db;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
+} */
+.rs-accordion-style1 .card .card-header {
+    padding: 0;
+    border: 1px solid rgb(197, 196, 196)!important;
+    margin-bottom: 10px;
+    background: transparent;
+  }
