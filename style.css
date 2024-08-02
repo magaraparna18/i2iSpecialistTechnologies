@@ -456,6 +456,7 @@ a {
   transition: all 0.3s ease 0s;
   text-decoration: none !important;
   outline: none !important;
+  
 }
 a:active,
 a:hover {
@@ -479,10 +480,14 @@ ul {
 ::selection {
   background: #ff3115;
   text-shadow: none;
-  color: black;
+  color: rgb(240, 228, 228);
 }
 .sec-spacer {
+<<<<<<< HEAD
   padding: 20px 0;
+=======
+  padding: 50px 0;
+>>>>>>> 230be6dc336e8cde9609be42311b77e64d624e2d
 }
 .sec-color {
   background-color: #f9f9f9;
@@ -6846,6 +6851,7 @@ ul {
 }
 .blog-page-area .blog-inner:hover .blog-content h4 a {
   color: #ff3115;
+ 
 }
 .blog-page-area .pagination {
   margin-top: 0;

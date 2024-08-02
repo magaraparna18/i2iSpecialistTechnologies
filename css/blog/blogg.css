@@ -1,0 +1,8 @@
+
+.blog-content .primary-btn {
+    display: block;
+    text-align: center;
+    margin: 0 auto; /* Center the button */
+    margin-top: 20px; /* Add some space above the button */
+    width: 100px;
+}
