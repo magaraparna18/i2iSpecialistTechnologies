@@ -109,6 +109,7 @@
 							  Courses
 							</a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="courses.html">Our Courses</a>
 							  <a class="dropdown-item" href="Trending_caurses.html">Trending Courses</a>
 							  <a class="dropdown-item" href="fullstackdevelopment.html">Full Stack Development</a>
 							  <a class="dropdown-item" href="datascience.html">Data Science</a>
@@ -163,7 +164,7 @@
                 <div class="row mb-50 blog-inner">
                     <div class="col-lg-6 col-md-12">
                         <div class="blog-images">
-                            <a href="DigitalMarketing.html"><i class="fa fa-link" aria-hidden="true"></i> <img src="images/i2i_images/blog_detail5.jpg" alt=""></a>
+                            <a href="DigitalMarketing.html"><i class="fa fa-link" aria-hidden="true"></i> <img src="images/blog_images/blog_detail5.jpg" alt=""></a>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-12">
@@ -179,7 +180,7 @@
 				<div class="row mb-50 blog-inner">
                     <div class="col-lg-6 col-md-12">
                         <div class="blog-images">
-                            <a href="fullstackdevelopment.html"><i class="fa fa-link" aria-hidden="true"></i> <img src="images/i2i_images/blog_detail.jpeg" alt=""></a>
+                            <a href="fullstackdevelopment.html"><i class="fa fa-link" aria-hidden="true"></i> <img src="images/blog_images/blog_detail1.jpg" alt=""></a>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-12">
@@ -195,7 +196,7 @@
 				<div class="row mb-50 blog-inner">
                     <div class="col-lg-6 col-md-12">
                         <div class="blog-images">
-                            <a href="AwsTrending.html"><i class="fa fa-link" aria-hidden="true"></i> <img src="images/i2i_images/aws.jpg" alt=""></a>
+                            <a href="AwsTrending.html"><i class="fa fa-link" aria-hidden="true"></i> <img src="images/blog_images/aws.jpg" alt=""></a>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-12">
@@ -211,7 +212,7 @@
 				<div class="row mb-50 blog-inner">
                     <div class="col-lg-6 col-md-12">
                         <div class="blog-images">
-                            <a href="datascience.html"><i class="fa fa-link" aria-hidden="true"></i> <img src="images/i2i_images/blog_detail1.jpg" alt=""></a>
+                            <a href="datascience.html"><i class="fa fa-link" aria-hidden="true"></i> <img src="images/blog_images/blog_detail2.jpg" alt=""></a>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-12">
@@ -230,7 +231,7 @@
 			<div class="row mb-50 blog-inner">
 				<div class="col-lg-6 col-md-12">
 					<div class="blog-images">
-						<a href="Trending_caurses.html"><i class="fa fa-link" aria-hidden="true"></i> <img src="images/i2i_images/cyber_security.jpg" alt=""></a>
+						<a href="Trending_caurses.html"><i class="fa fa-link" aria-hidden="true"></i> <img src="images/blog_images/cyber_security.jpg" alt=""></a>
 					</div>
 				</div>
 				<div class="col-lg-6 col-md-12">
@@ -314,24 +315,38 @@
 		</div>
 		<!-- Partner End -->
        <br><br>
-<!-- Footer Placeholder -->
-<div id="footer-placeholder"></div>
+
 
 <!-- Load Footer Script -->
-	<script>
-    // Function to load the footer
-    function loadFooter() {
-        fetch('footer.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('footer-placeholder').innerHTML = data;
+	<div include-html="Footer.html" id="footer"></div>
+
+<script>
+    function includeHTML() {
+      var elements = document.querySelectorAll('[include-html]');
+      elements.forEach(function(element) {
+        var file = element.getAttribute('include-html');
+        if (file) {
+          fetch(file)
+            .then(response => {
+              if (!response.ok) throw new Error('Network response was not ok.');
+              return response.text();
             })
-            .catch(error => console.error('Error loading footer:', error));
+            .then(data => {
+              element.innerHTML = data;
+              element.removeAttribute('include-html'); // Optional: remove the attribute after including
+              includeHTML(); // Recursively include HTML in the included file, if needed.
+            })
+            .catch(error => {
+              console.error('Error fetching HTML:', error);
+              element.innerHTML = "Error loading content.";
+            });
+        }
+      });
     }
 
-    // Call the function to load the footer
-    loadFooter();
-</script>
+    // Call the function to include HTML on page load
+    includeHTML();
+  </script>
         
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>

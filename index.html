@@ -18,8 +18,7 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<!-- font-awesome css -->
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-	<!-- animate css -->
-	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	
 	<!-- owl.carousel css -->
 	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
 	<!-- slick css -->
@@ -112,12 +111,15 @@
 							<a class="nav-link" href="about.html">About Us</a>
 						  </li>
 						 
+
+
 						  <li class="nav-item dropdown">
 							
-							<a class="nav-link dropdown-toggle" href="courses.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
 							  Courses
 							</a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="courses.html">Our Courses</a>
 							  <a class="dropdown-item" href="Trending_caurses.html">Trending Courses</a>
 							  <a class="dropdown-item" href="fullstackdevelopment.html">Full Stack Development</a>
 							  <a class="dropdown-item" href="datascience.html">Data Science</a>
@@ -126,6 +128,7 @@
 							  <a class="dropdown-item" href="DigitalMarketing.html">Digital Marketing</a>
 							 
 							</div>
+						
 						  </li>
 						  <li class="nav-item">
 							<a class="nav-link" href="blog.html">Blogs</a>
@@ -581,7 +584,7 @@
 				<div class="row">
 					<div class="col-lg-6 pt-40">
 						<div class="img-part">
-							<img src="images/about/home7.jpg" alt="">
+							<img src="images/blog_images/blog_detail.jpeg" alt="">
 						</div>
 					</div>
 					<div class="col-lg-6 pl-60 md-pt-40 md-pl-15">
@@ -675,7 +678,7 @@
 					</div>
 					<div class="col-lg-6 col-md-12">
 
-						<img src="images/choose_us/chooseus.png" alt="Why Choose Us">
+						<img src="https://pcaedu.in/wp-content/uploads/2019/09/why-us-800x400.jpg" alt="Why Choose Us">
 						<br><br>
 						<div class="col-md-11">
 							<div class="choose-item rs-animation-hover">
@@ -1042,7 +1045,7 @@
 		<!-- Review End -->
 
 		<!-- Counter up Section Start-->
-		<div class="rs-counter pt-100 pb-70 bg3">
+		<div class="rs-counter pt-100 pb-70 bg3" style="background-image: url('images/bg/acheivment.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
 			<div class="container">
 				<div class="sec-title white-text mb-50 text-center">
 					<h2>ACHIEVEMENTS</h2>
@@ -1144,25 +1147,40 @@
 			</div>
 			<!-- Partner End -->
 		<br>
-		<!-- Footer Placeholder -->
-		<div id="footer-placeholder"></div>
+		
+		
 
 		<!-- Load Footer Script -->
-		<script>
-			// Function to load the footer
-			function loadFooter() {
-				fetch('footer.html')
-					.then(response => response.text())
-					.then(data => {
-						document.getElementById('footer-placeholder').innerHTML = data;
-					})
-					.catch(error => console.error('Error loading footer:', error));
-			}
+		
+<div include-html="Footer.html" id="footer"></div>
 
-			// Call the function to load the footer
-			loadFooter();
-		</script>
+<script>
+    function includeHTML() {
+      var elements = document.querySelectorAll('[include-html]');
+      elements.forEach(function(element) {
+        var file = element.getAttribute('include-html');
+        if (file) {
+          fetch(file)
+            .then(response => {
+              if (!response.ok) throw new Error('Network response was not ok.');
+              return response.text();
+            })
+            .then(data => {
+              element.innerHTML = data;
+              element.removeAttribute('include-html'); // Optional: remove the attribute after including
+              includeHTML(); // Recursively include HTML in the included file, if needed.
+            })
+            .catch(error => {
+              console.error('Error fetching HTML:', error);
+              element.innerHTML = "Error loading content.";
+            });
+        }
+      });
+    }
 
+    // Call the function to include HTML on page load
+    includeHTML();
+  </script>
 
 		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
