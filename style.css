@@ -482,7 +482,7 @@ ul {
   color: black;
 }
 .sec-spacer {
-  padding: 100px 0;
+  padding: 20px 0;
 }
 .sec-color {
   background-color: #f9f9f9;
@@ -908,7 +908,7 @@ ul {
   padding-top: 80px !important;
 }
 .pt-100 {
-  padding-top: 100px !important;
+  padding-top: 50px !important;
 }
 .pb-40 {
   padding-bottom: 40px !important;
