@@ -524,3 +524,22 @@ body{
 .rs-learning-objectives .courses-item p {
     line-height: 1.6;
 }
+.textmar{
+    margin-top: 100px;
+    /* margin-bottom: 100px */
+}
+.textmarwhy{
+    
+    margin-bottom: 100px
+}
+
+
+@media only screen and (max-width:600px){
+    .textmar{
+        margin-top: 5px!important;
+    }
+    .textmarwhy{
+    
+        margin-bottom: -80px
+    }
+}
