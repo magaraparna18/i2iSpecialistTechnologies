@@ -417,32 +417,37 @@
     <div include-html="Footer.html" id="footer"></div>
 
 <script>
-    function includeHTML() {
-      var elements = document.querySelectorAll('[include-html]');
-      elements.forEach(function(element) {
-        var file = element.getAttribute('include-html');
-        if (file) {
-          fetch(file)
-            .then(response => {
-              if (!response.ok) throw new Error('Network response was not ok.');
-              return response.text();
-            })
-            .then(data => {
-              element.innerHTML = data;
-              element.removeAttribute('include-html'); // Optional: remove the attribute after including
-              includeHTML(); // Recursively include HTML in the included file, if needed.
-            })
-            .catch(error => {
-              console.error('Error fetching HTML:', error);
-              element.innerHTML = "Error loading content.";
-            });
-        }
-      });
-    }
 
-    // Call the function to include HTML on page load
-    includeHTML();
-  </script>
+$(document).ready(function() {
+    $('.rs-carousel').owlCarousel({
+        loop: true,
+        margin: 30,
+        autoplay: true,
+        autoplayTimeout: 1000,  // Time between each slide (1 second)
+        smartSpeed: 500,        // Transition speed (0.5 seconds)
+        dots: false,
+        nav: false,
+        responsive: {
+            0: {
+                items: 2,
+                nav: true,
+                dots: false
+            },
+            768: {
+                items: 3,
+                nav: false,
+                dots: false
+            },
+            992: {
+                items: 5,
+                nav: false,
+                dots: false
+            }
+        }
+    });
+});
+
+</script>
          
 
         <!-- modernizr js -->
