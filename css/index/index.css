@@ -373,7 +373,7 @@ body{
  /* Center text in the section title */
 .sec-title-2.text-center {
     text-align: center;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
 }
 
 /* Ensure testimonials are responsive */
@@ -411,7 +411,7 @@ body{
 .sec-title {
     text-align: center;
    
-    margin-bottom: 40px;
+    margin-bottom: 5px;
 }
 
 .sec-title h2 {
@@ -525,7 +525,7 @@ body{
     line-height: 1.6;
 }
 .textmar{
-    margin-top: 100px;
+    margin-top: 10px;
     /* margin-bottom: 100px */
 }
 .textmarwhy{

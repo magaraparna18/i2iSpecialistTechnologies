@@ -197,7 +197,7 @@
         padding-top: 70px;
     }
     .pt-100{
-        padding-top: 80px !important;
+        padding-top: 15px !important;
     }
     .pt-70,
     .mb-pt-50{
@@ -232,7 +232,7 @@
     .rs-about-2 .about-signature,
     .rs-courses-2,
     .pb-70{
-        padding-bottom: 50px !important;
+        padding-bottom: 5px !important;
     }
     .mt-80{
         margin-top: 60px !important;
@@ -1008,6 +1008,7 @@
     .rs-about-style8 .author-section .course-author,
     .rs-courses-details .course-title{
         margin-bottom: 20px;
+        
     }
 	.about-img .overly-border::before, 
 	.about-img .overly-border::after {

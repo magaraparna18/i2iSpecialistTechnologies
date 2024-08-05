@@ -422,6 +422,7 @@ img {
 }
 p {
   margin: 0 0 26px;
+  text-align: justify;
 }
 h1,
 h2,
@@ -484,8 +485,9 @@ ul {
 }
 .sec-spacer {
   padding: 20px 0;
+  margin-bottom: 5px;
 
-  padding: 50px 0;
+  /* padding: 50px 0; */
 
 }
 .sec-color {
@@ -569,7 +571,7 @@ ul {
   background-position: center top;
 }
 .bg3 {
-  background-image: url(images/bg/footer\ bg.jpg);
+  background-image: url(images/bg/acheivment.jpg);
   background-size: cover;
   background-attachment: scroll;
   background-position: center top;
@@ -723,6 +725,7 @@ ul {
 }
 .sec-title.white-text p {
   color: rgba(255, 255, 255, 0.6);
+  text-align: center;
 }
 .home5 .sec-title h2 {
   color: #92278f;
@@ -776,6 +779,7 @@ ul {
   left: 0;
 }
 .sec-title-2 p {
+  text-align: center;
   margin-bottom: 0;
   font-size: 16px;
 }
@@ -903,7 +907,8 @@ ul {
   padding-top: 45px !important;
 }
 .pt-70 {
-  padding-top: 70px !important;
+  padding-top: 10px !important;
+  
 }
 .pt-50 {
   padding-top: 50px !important;
@@ -915,13 +920,14 @@ ul {
   padding-top: 50px !important;
 }
 .pb-40 {
-  padding-bottom: 40px !important;
+  padding-bottom: 10px !important;
+  
 }
 .pb-45 {
   padding-bottom: 45px !important;
 }
 .pb-70 {
-  padding-bottom: 70px !important;
+  padding-bottom: 10px !important;
 }
 .pb-80 {
   padding-bottom: 80px !important;
@@ -2619,8 +2625,29 @@ ul {
 }
 .rs-about-style8 .author-section .course-author {
   display: flex;
+  justify-content: center;
   align-items: center;
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .rs-about-style8 .author-section .align-img {
   margin-right: 20px;
 }
@@ -3651,7 +3678,7 @@ ul {
   overflow: hidden;
 }
 .rs-courses-categories .container .col-lg-3 {
-  margin-bottom: 30px;
+  margin-bottom: 3000px;
 }
 .rs-courses-categories .courses-item {
   text-align: center;
@@ -6547,6 +6574,7 @@ ul {
   padding-bottom: 16px;
   text-transform: uppercase;
   position: relative;
+  text-align: center;
 }
 
 .abt-title.text-center h2:after {
@@ -8431,6 +8459,7 @@ ul {
   color: rgba(255, 255, 255, 0.7);
   margin-bottom: 0;
   font-size: 15px;
+  text-align: center;
 }
 .rs-footer .footer-top {
   padding-top: 140px;
