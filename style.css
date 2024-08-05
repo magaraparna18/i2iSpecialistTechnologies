@@ -422,8 +422,9 @@ img {
 }
 p {
   margin: 0 0 26px;
-text-align: justify;
+  text-align: justify;
   text-align: center;
+  
 }
 h1,
 h2,
