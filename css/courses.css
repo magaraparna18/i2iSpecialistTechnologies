@@ -1,9 +1,4 @@
 
-
-
-
-
-
 /* Course Features Section */
 
 .form-control {
@@ -18,10 +13,6 @@
 .form-control::placeholder {
     color: #888; /* Optional: to make placeholder text appear lighter */
 }
-
-
-
-
 
 
 /* In your CSS file (Get Courses Book Demo) */
