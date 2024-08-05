@@ -1,14 +1,43 @@
 
-.rs-accordion-style1 .card .card-header {
+  .rs-accordion-style1 .card .card-header {
     padding: 0;
-    border: 1px solid rgb(197, 196, 196)!important;
+    border: 1px solid rgb(197, 196, 196) !important;
     margin-bottom: 10px;
     background: transparent;
-  }
+}
 
-  .title{
+.title {
     text-align: center;
-  }
-  .t1{
+}
+
+.t1 {
     text-align: center;
-  }
+}
+
+.rs-accordion-style1 .card .acdn-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    cursor: pointer;
+    text-align: left;
+    background-color: #f8f9fa;
+    width: 100%;
+}
+
+.rs-accordion-style1 .card .acdn-title.collapsed::after {
+    transform: rotate(180deg); /* Rotates the arrow when collapsed */
+}
+
+/* Responsive Styles */
+@media (max-width: 767px) {
+    .rs-accordion-style1 .card .acdn-title {
+        padding: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+
+
+
