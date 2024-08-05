@@ -1,9 +1,4 @@
-/*
-Author: Mad rs Themes
-Author URI: http://madrsthemes.com
-Description: rs Menu is a fully responsive, easy-to-use, highly customized and creative Mega Menu
-Version: 1.0.0
-*/
+
 /*-----------------------------------------------------------------------------------*/
 /*	GLOBAL CSS THAT ARE APPLIED FOR ALL SCREEN SIZES
 /*-----------------------------------------------------------------------------------*/
@@ -13,10 +8,7 @@ Version: 1.0.0
    width: 100%;
    font-size: 0;
    position: relative;
-   /*background: #1c1c1c;
-   -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
-   -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
-   box-shadow: 0 2px 5px rgba(0, 0, 0, .2);*/
+  
 }
 
 .rs-menu ul,

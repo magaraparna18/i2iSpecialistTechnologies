@@ -714,6 +714,7 @@ ul {
 .sec-title p {
   margin-bottom: 0;
   font-size: 16px;
+  text-align: center;
 }
 .sec-title .view-more {
   position: absolute;
