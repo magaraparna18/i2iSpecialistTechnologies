@@ -3523,6 +3523,7 @@ ul {
 }
 .rs-courses-3 .course-item .course-body .course-desc {
   padding: 20px;
+  text-align: justify;
 }
 .rs-courses-3 .course-item .course-body .course-desc p {
   margin-bottom: 0;
