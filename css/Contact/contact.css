@@ -199,32 +199,34 @@
   }
 } */
 
-
-@media (max-width: 600px) {
-  .contacttext {
-      text-align: center;
-      font-size: 30px !important;
-      font-weight: bold;
-  }
-  .box i {
-      font-size: 25px;
-  }
-  .social-icons {
-      gap: 10px; /* Adjust space between icons for mobile view */
-  }
-  .social-icons a {
-      font-size: 25px; /* Adjust icon size for mobile view */
-  }
-  .social-icons a {
-
-    margin: 0 5px;
-  }
+.box {
+  text-align: center;
+}
+.contacttext {
+  font-size: 18px;
+}
+.social-icons a {
+  margin: 0 10px; /* Adjust the value as needed */
+  color: #333;
+  text-decoration: none;
+}
+.contact-info h6 {
+  margin: 5px 0;
+}
+.contacticon {
+  font-size: 24px; /* Adjust the icon size as needed */
 }
 
-
-
-
-
+.label{
+  font-size: 20px;
+}
+/* Mobile view specific styles */
+@media (max-width: 767px) {
+  .box {
+      padding: 20px; 
+      margin-top: 2px;/* Adjust the value as needed */
+  }
+}
 
 
 
@@ -250,12 +252,31 @@
   margin-left: 20px; /* Space between cards, adjust as needed */
 }
 .contacttext{
-  text-align: center; font-size: 50px; font-weight: bold;
+  text-align: center;
+   font-size: 50px; 
+   font-weight: bold;
+  
+}
+.contacttext1{
+  text-align: center; 
+  font-size: 20px!important; 
+  font-weight: bold;
+  line-height: normal;
 }
 
 @media only screen and (max-width:600px){
   .contacttext{
-    text-align: center; font-size: 30px!important; font-weight: bold;
+    text-align: center; 
+    font-size: 30px!important; 
+    font-weight: bold;
+    line-height: 80px;
+    
+  }
+  .contacttext1{
+    text-align: center; 
+    font-size: 20px!important; 
+    font-weight: bold;
+    line-height: normal;
   }
   .box i {
    
