@@ -422,7 +422,8 @@ img {
 }
 p {
   margin: 0 0 26px;
-  text-align: justify;
+text-align: justify;
+  text-align: center;
 }
 h1,
 h2,
@@ -439,6 +440,7 @@ h1 {
 }
 h2 {
   font-size: 30px;
+  text-align: center;
 }
 h3 {
   font-size: 24px;
@@ -690,7 +692,7 @@ ul {
 }
 .sec-title h2 {
   font-size: 30px;
-  line-height: 24px;
+  
   margin-bottom: 15px;
   text-transform: uppercase;
 }
@@ -2488,6 +2490,7 @@ ul {
   line-height: 27px;
   color: #505050;
   margin: 0;
+  text-align: justify;
 }
 /* ------------------------------------
     07. Services

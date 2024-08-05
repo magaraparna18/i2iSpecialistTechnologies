@@ -228,6 +228,7 @@ body{
     font-size: 1.25rem; /* Adjust size for large screens */
     color: #666; /* Text color */
     margin: 10px 0 0;
+    text-align: center;
 }
 
 /* Responsive adjustments */
@@ -251,7 +252,8 @@ body{
     }
 
     .banner-subtitle {
-        font-size: 0.875rem; /* Even smaller font size on small screens */
+        font-size: 0.875rem; 
+        
     }
 }
 
