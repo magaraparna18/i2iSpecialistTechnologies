@@ -141,7 +141,9 @@
 .map-container {
   display: flex;
   justify-content: center;
-  margin: 20px 0; /* Optional: adds vertical spacing */
+  margin: 20px 0; 
+  border: 1px solid rgb(246, 243, 243);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
 }
 .map-container iframe {
   border: 0;
