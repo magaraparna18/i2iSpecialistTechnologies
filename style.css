@@ -580,7 +580,8 @@ ul {
   background-position: center top;
 }
 .bg31 {
-  background-image: url(images/bg/counter-bg.jpg);
+   background-image: url(images/bg/counter-bg.jpg); 
+ 
   background-size: cover;
   background-attachment: scroll;
   background-position: center top;
@@ -1099,7 +1100,7 @@ ul {
   margin-right: 8px;
 }
 .rs-toolbar .rs-toolbar-left .welcome-message span {
-  color: #ffffff;
+  color: black;
 }
 .rs-toolbar .rs-toolbar-right {
   text-align: right;
