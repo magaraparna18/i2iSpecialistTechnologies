@@ -57,22 +57,28 @@
 .instructor-title {
     font-size: 1.5em;
     margin-bottom: 15px;
+    text-align: center;
 }
 
 .instructor-inner, .info-list {
     margin-bottom: 20px;
+    
 }
 
 .instructor-img img, .post-img img {
     width: 100%;
     height: auto;
     display: block;
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .instructor-body .name, .post-desc h4 {
     font-size: 1.2em;
     font-weight: bold;
     margin: 10px 0;
+    text-align: center;
 }
 
 .google-ratings .rating-stars {
@@ -99,7 +105,7 @@
 
 /* Course Description and Why Full Stack Development Section */
 .course-desc, .why-fullstack-container {
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .desc-title, .why-fullstack-title {
@@ -124,46 +130,70 @@
 .why-fullstack-link:hover {
     text-decoration: underline;
 }
-
-/* Latest Courses Section */
+/* General Styles */
 .latest-courses-horizontal {
-    margin-top: 30px;
-}
-
-.latest-courses-horizontal .title {
-    font-size: 1.5em;
-    margin-bottom: 15px;
-}
-
-.latest-courses-grid {
+    padding: 20px; /* Adjust as needed */
+  }
+  
+  .latest-courses-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
-}
-
-.post-item {
-    background-color: #fff;
+    gap: 15px; /* Space between items */
+  }
+  
+  .post-item {
+    flex: 1 1 calc(25% - 15px); /* 4 items per row with gap */
+    box-sizing: border-box;
     border: 1px solid #ddd;
-    padding: 10px;
     border-radius: 5px;
-    width: calc(25% - 15px);
-}
-
-.post-desc {
+    overflow: hidden;
+  }
+  
+  .post-img img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .post-desc {
+    padding: 15px;
+  }
+  
+  .post-desc h4 a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .post-desc .duration {
+    display: block;
     margin-top: 10px;
-}
-
-.post-desc h4 {
-    font-size: 1.2em;
-    margin-bottom: 5px;
-}
-
-.post-desc .duration, .post-desc .price {
-    font-size: 0.9em;
     color: #555;
-}
-
-
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 1200px) {
+    .post-item {
+      flex: 1 1 calc(33.333% - 15px); /* 3 items per row */
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .post-item {
+      flex: 1 1 calc(50% - 15px); /* 2 items per row */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .post-item {
+      flex: 1 1 100%; /* 1 item per row */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .latest-courses-horizontal {
+      padding: 10px; /* Reduced padding for smaller screens */
+    }
+  }
+  
 
 
 

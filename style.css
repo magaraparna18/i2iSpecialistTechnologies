@@ -2894,7 +2894,7 @@ ul {
   font-size: 14px;
 }
 #rs-about {
-  margin-top: -30px;
+  margin-bottom: -30px;
 }
 /* ------------------------------------
     30. Course Categories
@@ -5266,7 +5266,7 @@ ul {
   position: relative;
   overflow: hidden;
   border: 1px solid black;
-  box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.3);
+  box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.9);
 }
 .rs-team .team-item .team-img {
   position: relative;
@@ -6407,7 +6407,7 @@ ul {
     21. Why Choose Us
 ---------------------------------------*/
 .rs-why-choose .sec-title {
-  margin-bottom: 44px;
+  margin-bottom: 15px;
 }
 .rs-why-choose .choose-item {
   text-align: center;

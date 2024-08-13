@@ -1,8 +1,9 @@
 /* Style for all h1 elements within the container */
 .container-fluid h1 {
-    color: #ffffff; /* White text color */
+    color: #ffffff; 
     font-size: 2.5rem; /* Adjust size as needed */
     margin-bottom: 1rem; /* Space below the heading */
+    text-align: center;
 }
 
 /* Style for all h3 elements within the container */

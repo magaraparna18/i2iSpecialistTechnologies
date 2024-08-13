@@ -1,0 +1,51 @@
+.row {
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Responsive Styles */
+@media (max-width: 991px) {
+    #rs-team .team-card {
+        padding: 15px; /* Add padding to the card on smaller screens */
+       
+    }
+
+    #rs-team .col-lg-3,
+    #rs-team .col-md-3,
+    #rs-team .col-sm-6 {
+        margin-bottom: 20px;
+    }
+
+    #rs-team .team-box h2 {
+        font-size: 1.1em;
+        margin-bottom: 5px;
+       
+    }
+
+    #rs-team .team-box .team-position {
+        font-size: 0.9em;
+       
+    }
+}
+
+@media (max-width: 767px) {
+    #rs-team .team-card {
+        padding: 10px; /* Further reduce padding for extra small screens */
+    }
+
+    #rs-team .col-lg-3,
+    #rs-team .col-md-3,
+    #rs-team .col-sm-6 {
+        max-width: 100%;
+        flex: 0 0 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #rs-team .team-box h2 {
+        font-size: 1em;
+    }
+
+    #rs-team .team-box .team-position {
+        font-size: 0.85em;
+    }
+}
