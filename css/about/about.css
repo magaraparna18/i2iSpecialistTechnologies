@@ -1,7 +1,12 @@
+.row {
+    margin-left: auto;
+    margin-right: auto;
+}
 /* Responsive Styles */
 @media (max-width: 991px) {
     #rs-team .team-card {
         padding: 15px; /* Add padding to the card on smaller screens */
+       
     }
 
     #rs-team .col-lg-3,
@@ -13,10 +18,12 @@
     #rs-team .team-box h2 {
         font-size: 1.1em;
         margin-bottom: 5px;
+       
     }
 
     #rs-team .team-box .team-position {
         font-size: 0.9em;
+       
     }
 }
 
