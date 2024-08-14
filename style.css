@@ -2353,9 +2353,9 @@ ul {
 /* ------------------------------------
     06. Breadcrumbs
 ---------------------------------------*/
-.rs-breadcrumbs {
+/* .rs-breadcrumbs {
   padding: 100px 0 35px;
-}
+} */
 .rs-breadcrumbs .page-title {
   margin: 80px 0 100px;
   font-size: 36px;
