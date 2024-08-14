@@ -1,0 +1,42 @@
+
+		.seo-keywords {
+			list-style-type: none;
+			padding: 0;
+			padding-left: 70px;
+			display: flex;
+			flex-direction: column;
+			
+		}
+
+		.seo-keywords li {
+			margin-top: 5px;
+		}
+
+		.seo-keywords li strong {
+			display: block;
+		}
+
+		@media (max-width: 768px) {
+			.contact-title,
+			.contact-desc,
+			.about-widget p,
+			.seo-keywords li strong {
+				font-size: 0.9em;
+			}
+
+			.contact-inner,
+			.about-widget,
+			.footer-bottom {
+				padding: 10px 0;
+			}
+		}
+
+		@media (max-width: 576px) {
+			.contact-title,
+			.contact-desc,
+			.about-widget p,
+			.seo-keywords li strong {
+				font-size: 0.8em;
+			}
+		}
+	

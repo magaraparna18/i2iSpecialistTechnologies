@@ -4118,6 +4118,7 @@ ul {
 .rs-courses-details .instructor-inner .instructor-body .designation {
   font-size: 14px;
   font-weight: 600;
+  margin-left: 40px;
 }
 .rs-courses-details .instructor-inner .instructor-body .social-icon {
   margin-top: 15px;
@@ -5441,6 +5442,7 @@ ul {
 }
 .rs-team-2 .team-item .team-body .designation {
   font-size: 15px;
+  
 }
 .rs-team-2.team-page {
   padding-top: 93px;
