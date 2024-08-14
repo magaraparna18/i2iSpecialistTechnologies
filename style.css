@@ -9047,16 +9047,9 @@ color: white!important;
 background-color: blue!important;
 color: red!important;
 }
-
-
-
-
-
 .aboutmar{
   margin-top: 30px;
 }
-
-
 @media only screen and (max-width:600px){
   .aboutmar{
     margin-top: 10px;
