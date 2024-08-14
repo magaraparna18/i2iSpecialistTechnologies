@@ -88,19 +88,25 @@
 
 .short-desc, .apply-btn a {
     margin-top: 10px;
+}.text-center {
+	text-align: center;
 }
-.apply a:hover {
-    background-color: #b30021; /* Change color on hover */
+
+.text-left {
+	display: inline-block;
+	text-align: left;
+	margin-bottom: 10px;
+}
+
+.apply {
+	display: inline-block;
+	text-align: center;
+	width: 100%;
 }
 
 .apply a {
-    display: inline-block;
-     padding: 10px 20px; 
-    background-color: #007bff;
-    color: #fff;
-    border-radius: 5px;
-    text-align: center;
-    text-decoration: none;
+	display: inline-block;
+	width: auto;
 }
 
 /* Course Description and Why Full Stack Development Section */
