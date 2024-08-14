@@ -6,6 +6,8 @@
 	<meta charset="utf-8">
 	<title>i2ispecialist Technologies</title>
 	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<!-- responsive tag -->
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -47,7 +49,7 @@
 	padding-left: 70px;
     display: flex; 
     flex-direction: column; 
-    justify-content: center; 
+   
 }
 
 .seo-keywords li {
@@ -58,7 +60,21 @@
 .seo-keywords li strong {
     display: block; 
 }
+@media (max-width: 768px) {
+    .contact-title, .contact-desc, .about-widget p, .seo-keywords li strong {
+        font-size: 0.9em;
+    }
 
+    .contact-inner, .about-widget, .footer-bottom {
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .contact-title, .contact-desc, .about-widget p, .seo-keywords li strong {
+        font-size: 0.8em;
+    }
+}
 
 </style>
 

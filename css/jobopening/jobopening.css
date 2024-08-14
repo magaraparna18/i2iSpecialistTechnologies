@@ -2,12 +2,17 @@
 .rs-jobs {
     padding: 50px 0;
 }
+.job-text{
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+}
 
 .rs-jobs .job-item {
     border: 1px solid #ddd;
-    border-radius: 8px;
+    border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     transition: box-shadow 0.3s ease, transform 0.3s ease;
     background-color: #fff;
     display: flex;
