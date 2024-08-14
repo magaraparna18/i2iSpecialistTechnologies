@@ -1,0 +1,48 @@
+
+
+.job-listings {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.job-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.company-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.location, .job-type, .posted-time {
+    color: #888;
+    font-size: 14px;
+}
+
+.job-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .filters {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .job-listings {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .job-listings {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
