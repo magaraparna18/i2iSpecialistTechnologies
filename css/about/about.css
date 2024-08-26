@@ -42,10 +42,11 @@
     }
 
     #rs-team .team-box h2 {
-        font-size: 1em;
+        font-size: 2em;
     }
 
     #rs-team .team-box .team-position {
-        font-size: 0.85em;
+        font-size: 1.4em;
+        color: black;
     }
 }
